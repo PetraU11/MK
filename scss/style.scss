@@ -23,9 +23,11 @@ a {
     color: black
 }
 
-h2 {
-    margin:0;
-}
+
+
+
+
+//HEADER//
 
 .header{
     background-color: rgb(198, 155, 117);
@@ -38,6 +40,7 @@ h2 {
   align-items: center;
   height: 60px;
   width: 90%;
+  max-width: 1200px; //celý dokument!!! //
   margin-left: auto;
   margin-right: auto;
 }
@@ -59,22 +62,24 @@ h2 {
     margin-right: 20px;   
 }
 
-.header__introduction{
+.header__hero{
     background-image: url("../images/header_introduction.jpg");
     background-size: cover;
     height: 400px;
 }
 
-.header__introduction-h1 {
+.header__hero-h1 {
     color:whitesmoke;
     padding-top: 180px;
 }
 
-.header__introduction-h2{
+.header__hero-h2{
     color:whitesmoke;
     padding-left: 80px;
 }
 
+
+//MASOVÁ KORYTA//
 
 .catering_pricing{
     @media screen and (min-width: 600px) {
@@ -99,9 +104,18 @@ h2 {
     border: 5px solid rgb(198, 155, 117);
 }
 
+//OBJEDNÁVKY//
+
+//KONTAKTY//
+
+
+//FOOTER//
+
 
 .footer {
     background-color:rgb(198, 155, 117);
     height: 60px;
-    padding-top: 10px;
+    padding-top: 20px;
+  
 }
+

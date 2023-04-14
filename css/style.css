@@ -25,10 +25,6 @@ a {
   color: black;
 }
 
-h2 {
-  margin: 0;
-}
-
 .header {
   background-color: rgb(198, 155, 117);
   padding-top: 10px;
@@ -40,6 +36,7 @@ h2 {
   align-items: center;
   height: 60px;
   width: 90%;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -59,18 +56,18 @@ h2 {
   margin-right: 20px;
 }
 
-.header__introduction {
+.header__hero {
   background-image: url("../images/header_introduction.jpg");
   background-size: cover;
   height: 400px;
 }
 
-.header__introduction-h1 {
+.header__hero-h1 {
   color: whitesmoke;
   padding-top: 180px;
 }
 
-.header__introduction-h2 {
+.header__hero-h2 {
   color: whitesmoke;
   padding-left: 80px;
 }
@@ -101,5 +98,5 @@ h2 {
 .footer {
   background-color: rgb(198, 155, 117);
   height: 60px;
-  padding-top: 10px;
+  padding-top: 20px;
 }/*# sourceMappingURL=style.css.map */
