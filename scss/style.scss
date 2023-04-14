@@ -1,0 +1,88 @@
+*, :after, :before { box-sizing: border-box;}
+
+body{
+    margin: 0;
+    padding:0;
+    text-align:center;   
+}
+
+main section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main section:nth-child(2n){
+    background-color: rgba(198, 155, 117, 0.451);
+}
+
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+h2 {
+    margin:0;
+}
+
+.header{
+    background-color: rgb(198, 155, 117);
+    padding-top: 10px;
+}
+
+.header__topbar {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__topbar-menu ul {
+    display:flex;
+    padding-left:0;
+}
+
+.header__topbar-menu .menu__link {
+    margin-right: 10px;
+}
+
+.header__topbar-icons a:nth-child(2){
+    margin-left: 10px;
+    margin-right: 10px;   
+}
+
+.header__introduction{
+    background-image: url("../images/header_introduction.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.header__introduction-h1 {
+    color:whitesmoke;
+    padding-top: 180px;
+}
+
+.header__introduction-h2{
+    color:whitesmoke;
+    padding-left: 80px;
+}
+
+
+.catering_pricing{
+    @media screen and (min-width: 600px) {
+        display:flex;
+        justify-content: center;
+    }
+}
+
+.footer {
+    background-color:rgb(198, 155, 117);
+    height: 60px;
+    padding-top: 10px;
+}
