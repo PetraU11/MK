@@ -37,7 +37,7 @@ a {
 }
 
 .header__topbar {
-  height: 100px;
+  height: 60px;
   width: 90%;
   max-width: 1200px; //celý dokument!!! //
  
@@ -48,19 +48,22 @@ a {
     height: 60px;
 }}
 
-
-.header__topbar-menu ul {
-    display:flex;  
+.menu__list {
+    display:flex;
 }
 
 .header__topbar-menu .menu__link {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .header__topbar-icons a:nth-child(2){
     margin-left: 20px;
     margin-right: 20px;   
 }
+
+
+
+
 
 .header__hero{
     background-image: url("../images/header_introduction.jpg");
