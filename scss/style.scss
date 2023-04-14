@@ -44,16 +44,19 @@ h2 {
 
 .header__topbar-menu ul {
     display:flex;
+    flex-basis: 50%;
     padding-left:0;
 }
 
 .header__topbar-menu .menu__link {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
+
+
 .header__topbar-icons a:nth-child(2){
-    margin-left: 10px;
-    margin-right: 10px;   
+    margin-left: 20px;
+    margin-right: 20px;   
 }
 
 .header__introduction{
@@ -79,6 +82,23 @@ h2 {
         justify-content: center;
     }
 }
+
+.catering_pricing img {
+    width: 60%;
+    opacity: 0.7;
+    border: 5px solid rgb(90, 44, 4);
+
+    @media screen and (min-width: 600px) {
+        width: 100%;
+     }
+   
+}
+
+.catering_pricing img::after{
+    content: "";
+    border: 5px solid rgb(198, 155, 117);
+}
+
 
 .footer {
     background-color:rgb(198, 155, 117);
