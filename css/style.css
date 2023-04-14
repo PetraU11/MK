@@ -72,6 +72,12 @@ a {
   padding-left: 80px;
 }
 
+.about {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (min-width: 600px) {
   .catering_pricing {
     display: flex;
@@ -93,6 +99,12 @@ a {
 .catering_pricing img::after {
   content: "";
   border: 5px solid rgb(198, 155, 117);
+}
+
+.order {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer {

@@ -1,5 +1,7 @@
 *, :after, :before { box-sizing: border-box;}
 
+
+// OBECNÉ //
 body{
     margin: 0;
     padding:0;
@@ -55,8 +57,6 @@ a {
     margin-right: 20px;
 }
 
-
-
 .header__topbar-icons a:nth-child(2){
     margin-left: 20px;
     margin-right: 20px;   
@@ -77,6 +77,16 @@ a {
     color:whitesmoke;
     padding-left: 80px;
 }
+
+
+
+//O NÁS//
+.about{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
 
 
 //MASOVÁ KORYTA//
@@ -104,13 +114,22 @@ a {
     border: 5px solid rgb(198, 155, 117);
 }
 
+
+
 //OBJEDNÁVKY//
+
+.order{
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right:auto;
+}
+
+
 
 //KONTAKTY//
 
 
 //FOOTER//
-
 
 .footer {
     background-color:rgb(198, 155, 117);
