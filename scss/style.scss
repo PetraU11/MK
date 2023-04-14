@@ -37,20 +37,20 @@ a {
 }
 
 .header__topbar {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
+  height: 100px;
   width: 90%;
   max-width: 1200px; //celý dokument!!! //
-  margin-left: auto;
-  margin-right: auto;
-}
+ 
+  @media screen and (min-width: 600px) {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}}
+
 
 .header__topbar-menu ul {
-    display:flex;
-    flex-basis: 50%;
-    padding-left:0;
+    display:flex;  
 }
 
 .header__topbar-menu .menu__link {
@@ -65,17 +65,26 @@ a {
 .header__hero{
     background-image: url("../images/header_introduction.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
     height: 400px;
+    //background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../images/header_introduction.jpg");
+}
+
+.header__hero-heading{
+   position:absolute;
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+ //  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header__hero-h1 {
-    color:whitesmoke;
-    padding-top: 180px;
-}
+    color:whitesmoke;}
 
 .header__hero-h2{
     color:whitesmoke;
-    padding-left: 80px;
 }
 
 
@@ -109,10 +118,7 @@ a {
    
 }
 
-.catering_pricing img::after{
-    content: "";
-    border: 5px solid rgb(198, 155, 117);
-}
+
 
 
 
