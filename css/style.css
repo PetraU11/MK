@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  color: rgb(44, 29, 16);
 }
 
 main section {
@@ -127,6 +128,8 @@ a {
   margin-right: auto;
   background-color: rgba(207, 229, 232, 0.8862745098);
   padding: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   border: 5px solid rgb(198, 155, 117);
   border-radius: 10px;
 }
