@@ -48,6 +48,8 @@ a {
     padding-left: 20px;
     padding-right: 20px;  
     max-width: 450px;
+    font-size: 1em;
+    font-weight: bolder;
 }
 
 .header__icons{
@@ -82,12 +84,9 @@ a {
 
 }
 
-.header__hero-h1 {
-    color:whitesmoke;}
-
+.header__hero-h1,
 .header__hero-h2{
-    color:whitesmoke;
-}
+    color:whitesmoke;}
 
 
 
