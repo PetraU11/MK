@@ -101,6 +101,7 @@ a {
 //MASOVÁ KORYTA//
 
 .catering_pricing{
+    position:relative;
     @media screen and (min-width: 600px) {
         display:flex;
         justify-content: center;

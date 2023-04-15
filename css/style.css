@@ -85,6 +85,9 @@ a {
   margin-right: auto;
 }
 
+.catering_pricing {
+  position: relative;
+}
 @media screen and (min-width: 600px) {
   .catering_pricing {
     display: flex;
