@@ -1,5 +1,11 @@
 *, :after, :before { box-sizing: border-box;}
 
+@mixin tablet { 
+    @media screen and (min-width: 600px) {@content; }}
+
+@mixin desktop {
+    @media screen and (min-width: 1000px) {@content; }}
+
 
 // OBECNÉ //
 body{
@@ -37,17 +43,19 @@ a {
 .header{
     background-color: rgb(198, 155, 117);
     display:grid;
-    @media screen and (min-width: 1000px) {
+    @include desktop {
         grid-template-columns: 1fr 1fr;
+        align-items: center;
     }
 }
 
 .header__topbar {
   height: 45px;
   max-width: 1200px; //celý dokument!!! //
-  padding-top: 10px;
-  margin-bottom:10px;
-  @media screen and (min-width: 1000px) {
+  margin-bottom: 5px;
+  margin-top:5px;
+  
+  @include desktop {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
@@ -71,7 +79,7 @@ a {
 .header__icons{
     padding-top: 10px;
     padding-bottom: 10px;
-    @media screen and (min-width: 1000px) {
+    @include desktop {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         text-align:right;
@@ -86,7 +94,7 @@ a {
 
 .header__icons-logo {
     display: none;
-    @media screen and (min-width: 1000px) {
+    @include desktop {
         display:inline-block;
     }
 }
@@ -99,7 +107,7 @@ a {
     position: relative;
     height: 400px;
     //background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/header_introduction.jpg");
-    @media screen and (min-width: 1000px) {
+    @include desktop {
         grid-column: 1 / 3;
         grid-row: 2 / 3;
     }
@@ -146,7 +154,7 @@ border-radius: 10px;
 
 .catering_pricing{
     position:relative;
-    @media screen and (min-width: 600px) {
+    @include tablet {
         display:flex;
         justify-content: center;
     }
@@ -157,7 +165,7 @@ border-radius: 10px;
     opacity: 0.7;
     border: 5px solid rgb(90, 44, 4);
 
-    @media screen and (min-width: 600px) {
+    @include tablet {
         width: 100%;
      }
    

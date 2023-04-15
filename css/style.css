@@ -35,14 +35,15 @@ a {
 @media screen and (min-width: 1000px) {
   .header {
     grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 }
 
 .header__topbar {
   height: 45px;
   max-width: 1200px;
-  padding-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 @media screen and (min-width: 1000px) {
   .header__topbar {
