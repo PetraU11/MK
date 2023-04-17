@@ -60,12 +60,12 @@ a {
 .header__topbar {
   height: 45px;
   max-width: 1200px; //celý dokument!!! //
+  margin-top: 10px;
+  margin-bottom: 10px;
   
   @include tablet {
     grid-column: 2 / 3;
     grid-row: 1 / 2; 
-    margin-top: 10px;
-    margin-bottom: 10px;
     }
 
   @include desktop {

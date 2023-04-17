@@ -49,13 +49,13 @@ a {
 .header__topbar {
   height: 45px;
   max-width: 1200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 700px) {
   .header__topbar {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 10px;
-    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1000px) {
