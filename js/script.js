@@ -6,6 +6,8 @@ email.addEventListener("click", () => {
 email.parentNode.replaceChild(newEmailItem,email)
 })
 
+newEmailItem.classList.add("jsEmailShown")
+
 
 
 
@@ -17,6 +19,8 @@ phone.addEventListener("click", () => {
     newPhoneItem.innerHTML = "+420 725 815 017"
     phone.parentNode.replaceChild(newPhoneItem,phone)
 })
+
+newPhoneItem.classList.add("jsPhoneNumberShown")
 
 
 
