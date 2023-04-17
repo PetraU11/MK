@@ -106,7 +106,6 @@ a {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-  
 
     @include tablet {
         grid-column: 1 / -1;
@@ -131,6 +130,10 @@ a {
     }
 }
 
+.header__icons * {
+    cursor:pointer;
+}
+
 
 .header__icons-logo {
     display: none;
@@ -153,21 +156,21 @@ a {
     }
 }
 
+.header__icons p {
+    margin-top:0;
+    margin-bottom:0;
+
+}
+
 .jsEmailShown{
     flex-basis:100%;
     padding-left: 10px;
-    margin-top:0;
-    margin-bottom:0;
     
     @include desktop {
         flex-basis:auto;
     }
 }
 
-.jsPhoneNumberShown {
-    margin-top:0;
-    margin-bottom:0;
-}
 
 
 
