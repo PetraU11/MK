@@ -46,7 +46,7 @@ a {
     column-gap: 10px;
 
     @include tablet {
-        grid-template-columns: 5% 1.5fr 1fr 5%; 
+        grid-template-columns: 5% 2fr 1fr 5%; 
     }
 
     @include desktop {
@@ -102,6 +102,10 @@ a {
 .header__icons{
     padding-top: 10px;
     padding-bottom: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
     @include tablet {
         grid-column: 1 / -1;
         grid-row: 3 / 4;
@@ -146,6 +150,8 @@ a {
   
     }
 }
+
+
 
 .header__hero{
     background-image: url("../images/header_introduction.jpg"); //object-fit pro fotky, nastavit height&weight. 

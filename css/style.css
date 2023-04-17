@@ -36,7 +36,7 @@ a {
 }
 @media screen and (min-width: 700px) {
   .header {
-    grid-template-columns: 5% 1.5fr 1fr 5%;
+    grid-template-columns: 5% 2fr 1fr 5%;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -93,6 +93,9 @@ a {
 .header__icons {
   padding-top: 10px;
   padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (min-width: 700px) {
   .header__icons {
