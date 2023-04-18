@@ -177,13 +177,11 @@ a {
     padding-right:10px;
     padding-bottom: 10px;
     
-    @include tablet {
-        flex-basis:auto;
-
     @include desktop {
+        flex-basis:auto;
         padding-bottom:0;
     }
-}} 
+} 
 
 .header__icons-emailIconHidden {
     display:none
@@ -199,10 +197,11 @@ a {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    
-    @include tablet {
+
+    @include desktop {
         flex-basis:auto;
-}
+        padding-bottom:0;
+    }
 }
 
 .header__icons-phoneIconHidden {
