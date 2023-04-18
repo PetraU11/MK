@@ -60,8 +60,8 @@ a {
 .header__topbar {
   height: 45px;
   max-width: 1200px; //celý dokument!!! //
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   
   @include tablet {
     grid-column: 2 / 3;
@@ -174,10 +174,15 @@ a {
 .header__icons-emailAddressShown{
     flex-basis:100%;
     padding-left: 10px;
+    padding-right:10px;
     padding-bottom: 10px;
     
     @include tablet {
         flex-basis:auto;
+
+    @include desktop {
+        padding-bottom:0;
+    }
 }} 
 
 .header__icons-emailIconHidden {
@@ -190,6 +195,14 @@ a {
 
 .header__icons-phoneNumberShown {
     display:inline-block;
+    flex-basis:100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    
+    @include tablet {
+        flex-basis:auto;
+}
 }
 
 .header__icons-phoneIconHidden {
