@@ -68,6 +68,7 @@ phone.addEventListener("click", () => {
     // phone.classList.toggle("header__icons-phoneIconHidden")
     phoneShown.classList.toggle("header__icons-phoneNumberHidden")
     phoneShown.classList.toggle("header__icons-phoneNumberShown")
+    
 })
 
 phoneShown.addEventListener("click",() => {
