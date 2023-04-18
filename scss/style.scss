@@ -121,7 +121,7 @@ a {
      }
 }
 
-.header__icons a:nth-child(2){
+.header__icons a{
     margin-left: 30px;
     margin-right: 30px;  
     @include desktop {
@@ -174,24 +174,15 @@ a {
 .header__icons-emailAddressShown{
     flex-basis:100%;
     padding-left: 10px;
+    padding-bottom: 10px;
     
-    @include desktop {
+    @include tablet {
         flex-basis:auto;
-    }
-} // p odkryté
-
-
-.header__icons-emailIconShown {
-    display: inline-block;
-}
+}} 
 
 .header__icons-emailIconHidden {
     display:none
-} // img schované
-
-
-
-
+}
 
 .header__icons-phoneNumberHidden {
     display:none
