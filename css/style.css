@@ -155,14 +155,38 @@ a {
   margin-bottom: 0;
 }
 
-.jsEmailShown {
+.header__icons-emailAddressHidden {
+  display: none;
+}
+
+.header__icons-emailAddressShown {
   flex-basis: 100%;
   padding-left: 10px;
 }
 @media screen and (min-width: 1000px) {
-  .jsEmailShown {
+  .header__icons-emailAddressShown {
     flex-basis: auto;
   }
+}
+
+.header__icons-emailIconShown {
+  display: inline-block;
+}
+
+.header__icons-emailIconHidden {
+  display: none;
+}
+
+.header__icons-phoneNumberHidden {
+  display: none;
+}
+
+.header__icons-phoneNumberShown {
+  display: inline-block;
+}
+
+.header__icons-phoneIconHidden {
+  display: none;
 }
 
 .header__hero {

@@ -162,14 +162,49 @@ a {
 
 }
 
-.jsEmailShown{
+
+
+//JS
+
+.header__icons-emailAddressHidden{
+    display:none; 
+} // p schované - výchozí
+
+
+.header__icons-emailAddressShown{
     flex-basis:100%;
     padding-left: 10px;
     
     @include desktop {
         flex-basis:auto;
     }
+} // p odkryté
+
+
+.header__icons-emailIconShown {
+    display: inline-block;
 }
+
+.header__icons-emailIconHidden {
+    display:none
+} // img schované
+
+
+
+
+
+.header__icons-phoneNumberHidden {
+    display:none
+}
+
+.header__icons-phoneNumberShown {
+    display:inline-block;
+}
+
+.header__icons-phoneIconHidden {
+    display:none
+} 
+
 
 
 
