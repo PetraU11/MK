@@ -56,25 +56,84 @@ a {
        
     }
 
-}
-
-.header__topbar {
-  height: 45px;
-  max-width: 1200px; //celý dokument!!! //
-  margin-top: 15px;
-  margin-bottom: 15px;
+&__topbar {
+    height: 45px;
+    max-width: 1200px; //celý dokument!!! //
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+    @include tablet {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2; 
+      }
   
-  @include tablet {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2; 
-    }
+    @include desktop {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      margin-bottom: 0px;
+    margin-top:0px;
+  }}
 
-  @include desktop {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    margin-bottom: 0px;
-  margin-top:0px;
+&__icons{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include tablet {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        justify-self: center;
+        
+     }
+    @include desktop {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        justify-self: end;
+        
+     }}
+
+&__icons a{
+    margin-left: 30px;
+    margin-right: 30px;  
+    @include desktop {
+        margin-left: 10px;
+        margin-right: 10px;   
+    }
 }
+
+&__icons * {
+    cursor:pointer;
+}
+
+&__icons-logo {
+    display: none;
+   
+    
+    @include tablet {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        display:inline-block;
+        justify-self: end;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    @include desktop {
+        grid-column: 4 / 5;
+        display:inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+  
+    }
+}
+
+&__icons p {
+    margin-top:0;
+    margin-bottom:0;
+}
+
 }
 
 
@@ -100,69 +159,6 @@ a {
     padding-right: 5px;
 }
 
-
-.header__icons{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    @include tablet {
-        grid-column: 1 / -1;
-        grid-row: 3 / 4;
-        justify-self: center;
-        
-     }
-    @include desktop {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
-        justify-self: end;
-        
-     }
-}
-
-.header__icons a{
-    margin-left: 30px;
-    margin-right: 30px;  
-    @include desktop {
-        margin-left: 10px;
-        margin-right: 10px;   
-    }
-}
-
-.header__icons * {
-    cursor:pointer;
-}
-
-
-.header__icons-logo {
-    display: none;
-   
-    
-    @include tablet {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
-        display:inline-block;
-        justify-self: end;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    @include desktop {
-        grid-column: 4 / 5;
-        display:inline-block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-  
-    }
-}
-
-.header__icons p {
-    margin-top:0;
-    margin-bottom:0;
-
-}
 
 
 
