@@ -330,31 +330,49 @@ border-radius: 10px;
     @include tablet{
     display:grid;
     grid-template-columns: 5% 1fr 1fr 5%;
-    gap: 10px;
-}}
+    gap: 10px;}
+    @include desktop {
+        grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    }
+}
 
 .contact__header{
     @include tablet{
     grid-row: 1 / 2;
     grid-column: 1 / -1;}
+   
 }
 
 .contact__contacts {
     @include tablet{
-    max-width: 500px;
+    max-width: 400px;
+    justify-self: right;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     }
+   
 }
 
 .contact__address {
     @include tablet{
     width: 300px;
+    justify-self: center;
     grid-row: 2 / 3;
     grid-column: 3 / 4;}
 
 }
 
+.contact__map {
+    display:none;
+    @include desktop {
+        display:inline-block;
+        grid-column: 4 / 5;
+    }
+}
+
+.contact__address-map {
+    @include desktop {display: none;}
+}
 
 
 //NA ŠPICI//
@@ -376,7 +394,7 @@ position:absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%); 
-background-color: rgba(0, 0, 0, 0.5);
+background-color: rgba(0, 0, 0, 0.6);
 padding: 10px;
 min-width: 300px;
 border-radius: 10px;
