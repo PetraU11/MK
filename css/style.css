@@ -255,7 +255,12 @@ a {
   .catering_pricing {
     display: flex;
     justify-content: center;
+    gap: 20px;
   }
+}
+
+.catering_pricing ul {
+  padding-left: 0;
 }
 
 .catering_pricing img {
@@ -278,11 +283,9 @@ a {
 
 .order__wrapper {
   max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: rgba(207, 229, 232, 0.8862745098);
   padding: 10px;
-  margin: 25px;
+  margin: 25px auto;
   border: 5px solid rgb(198, 155, 117);
   border-radius: 10px;
 }
