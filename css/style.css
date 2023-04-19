@@ -290,8 +290,30 @@ a {
   border-radius: 10px;
 }
 
+@media screen and (min-width: 700px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+  }
+}
+
+.contact__header {
+  grid-row: 1/2;
+  grid-column: 1/-1;
+}
+
+.contact__contacts {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
 .contact__address {
-  background-image: url("../images/bar cely Small.jpeg");
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+
+.naspici {
+  background-image: url("../images/bar_5.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -299,10 +321,11 @@ a {
   padding-top: 15px;
   padding-bottom: 15px;
   position: relative;
-  height: 300px;
+  height: 400px;
 }
 
-.contact__address-wrapper {
+.naspici__wrapper {
+  max-width: 1100px;
   position: absolute;
   top: 50%;
   left: 50%;

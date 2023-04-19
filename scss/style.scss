@@ -304,7 +304,7 @@ border-radius: 10px;
 //OBJEDNÁVKY//
 
 .order{
-        background-image: url("../images/IMG_7290.png"); //změnit velikost fotky, moc velké, zpomaluje načítaní
+    background-image: url("../images/IMG_7290.png"); //změnit velikost fotky, moc velké, zpomaluje načítaní
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -326,27 +326,52 @@ border-radius: 10px;
 
 
 //KONTAKTY//
-.contact__address {
-    background-image: url("../images/bar\ cely\ Small.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color:whitesmoke;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    position:relative;
-    height: 300px
+.contact {
+    @include tablet{
+    display:grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+}}
+
+.contact__header{
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
 }
 
-.contact__address-wrapper {
-    position:absolute;
-   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  min-width: 200px;
-  border-radius: 10px;
+.contact__contacts {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.contact__address {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+
+
+
+//NA ŠPICI//
+.naspici {
+background-image: url("../images/bar_5.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+color:whitesmoke;
+padding-top: 15px;
+padding-bottom: 15px;
+position:relative;
+height: 400px
+}
+
+.naspici__wrapper {
+max-width: 1100px;
+position:absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); 
+background-color: rgba(0, 0, 0, 0.5);
+padding: 10px;
+min-width: 200px;
+border-radius: 10px;
 }
 
 
