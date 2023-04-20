@@ -270,14 +270,15 @@ border-radius: 10px;
 //MASOVÁ KORYTA//
 
 .catering_pricing{
-    
     @include tablet {
         display:flex;
         justify-content: center;
-        gap: 20px;
+        gap: 10px;
+    }
+    @include desktop {
+        gap: 25px;
     }
 }
-
 
 .catering_pricing img {
     border: 5px solid rgb(90, 44, 4);
@@ -314,7 +315,9 @@ border-radius: 10px;
     
     }
     
-
+.catering_pricing ul {
+    padding: 0;
+}
 
 
 //KONTAKTY//
@@ -325,6 +328,7 @@ border-radius: 10px;
     gap: 10px;}
     @include desktop {
         grid-template-columns: 1% 1fr 1fr 1fr 1%;
+    
     }
 }
 

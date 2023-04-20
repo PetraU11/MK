@@ -244,7 +244,12 @@ a {
   .catering_pricing {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .catering_pricing {
+    gap: 25px;
   }
 }
 
@@ -267,6 +272,10 @@ a {
   margin: 25px auto;
   border: 5px solid rgb(198, 155, 117);
   border-radius: 10px;
+}
+
+.catering_pricing ul {
+  padding: 0;
 }
 
 @media screen and (min-width: 700px) {
