@@ -1,27 +1,3 @@
-/* const email = document.querySelector("#email-icon")
-const newEmailItem = document.createElement("p")
-
-email.addEventListener("click", () => {
-    newEmailItem.innerHTML = "masovekoryta.ostrava@gmail.com"
-email.parentNode.replaceChild(newEmailItem,email)
-})
-
-newEmailItem.classList.add("jsEmailShown")
-
-
-
-
-//přidat classes only?
-
-
-
-const emailBack = document.createElement("p")
-newEmailItem.addEventListener("click", () => {
-    emailBack.innerHTML =`<img class="header__icons-email" id="email-icon" src="images/mail_bw_32.png" alt="ikona obálky">` 
-    newEmailItem.parentNode.replaceChild(emailBack,newEmailItem)
-})
-
-
 
 const phone = document.querySelector("#phone-icon")
 const newPhoneItem = document.createElement("p")
