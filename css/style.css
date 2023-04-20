@@ -240,9 +240,6 @@ a {
   border-radius: 10px;
 }
 
-.catering_pricing {
-  position: relative;
-}
 @media screen and (min-width: 700px) {
   .catering_pricing {
     display: flex;
@@ -251,19 +248,9 @@ a {
   }
 }
 
-.catering_pricing ul {
-  padding-left: 0;
-}
-
 .catering_pricing img {
-  width: 60%;
-  opacity: 0.7;
   border: 5px solid rgb(90, 44, 4);
-}
-@media screen and (min-width: 700px) {
-  .catering_pricing img {
-    width: 100%;
-  }
+  width: 200px;
 }
 
 .order {

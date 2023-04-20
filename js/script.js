@@ -1,23 +1,4 @@
 
-const phone = document.querySelector("#phone-icon")
-const newPhoneItem = document.createElement("p")
-
-phone.addEventListener("click", () => {
-    newPhoneItem.innerHTML = "+420 725 815 017"
-    phone.parentNode.replaceChild(newPhoneItem,phone)
-})
-
-newPhoneItem.classList.add("jsPhoneNumberShown")
-
-const phoneBack = document.createElement("p")
-newPhoneItem.addEventListener("click", () => {
-    phoneBack.innerHTML =`<img class="header__icons-phone" id="phone-icon" src="images/phone_bw_32.png" alt="ikona telefonu">` 
-    newPhoneItem.parentNode.replaceChild(phoneBack,newPhoneItem)
-})
-
-
-*/
-
 const email = document.querySelector("#email-icon")
 const emailShown = document.querySelector("#email-address")
 
