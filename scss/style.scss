@@ -44,7 +44,6 @@ a {
 .header{
     background-color: rgb(198, 155, 117);
     display:grid;
-    column-gap: 10px;
 
     @include tablet {
         grid-template-columns: 5% 2fr 1fr 5%; 
@@ -52,8 +51,7 @@ a {
 
     @include desktop {
         grid-template-columns: 5% 1fr 1fr 70px 5%;
-       align-items: center;
-       
+        align-items: center; 
     }
 
 &__topbar {

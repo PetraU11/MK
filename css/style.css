@@ -31,8 +31,6 @@ a {
 .header {
   background-color: rgb(198, 155, 117);
   display: grid;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
 }
 @media screen and (min-width: 700px) {
   .header {
