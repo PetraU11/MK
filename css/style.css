@@ -28,6 +28,10 @@ a {
   color: black;
 }
 
+h4 {
+  margin: 0;
+}
+
 .header {
   background-color: rgb(198, 155, 117);
   display: grid;
@@ -240,6 +244,9 @@ a {
   border-radius: 10px;
 }
 
+.catering_pricing {
+  position: relative;
+}
 @media screen and (min-width: 700px) {
   .catering_pricing {
     display: flex;
@@ -256,6 +263,26 @@ a {
 .catering_pricing img {
   border: 5px solid rgb(90, 44, 4);
   width: 200px;
+  border-radius: 10px;
+}
+
+.catering-pricing-list {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 170px;
+  height: 170px;
+  padding: 30px 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: whitesmoke;
+  position: absolute;
+}
+@media screen and (min-width: 700px) {
+  .catering-pricing-list {
+    position: absolute;
+    top: 20%;
+    margin-left: 13px;
+  }
 }
 
 .order {
@@ -272,10 +299,6 @@ a {
   margin: 25px auto;
   border: 5px solid rgb(198, 155, 117);
   border-radius: 10px;
-}
-
-.catering_pricing ul {
-  padding: 0;
 }
 
 @media screen and (min-width: 700px) {
