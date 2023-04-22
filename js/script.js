@@ -33,3 +33,5 @@ phoneShown.addEventListener("click",() => {
     phoneShown.classList.add("header__icons-phoneNumberHidden")
     // phone.classList.toggle("header__icons-phoneIconHidden")
 })
+
+
