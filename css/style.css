@@ -276,6 +276,11 @@ h4 {
     transform: rotate(270deg);
   }
 }
+@media screen and (min-width: 1000px) {
+  .catering_pricing img {
+    width: 360px;
+  }
+}
 
 .catering-pricing-list {
   border-radius: 50%;
@@ -286,7 +291,7 @@ h4 {
   margin-left: auto;
   margin-right: auto;
   color: whitesmoke;
-  transform: translateY(-190px);
+  transform: translateY(-195px);
 }
 
 .catering_pricing-medium {
