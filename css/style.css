@@ -294,9 +294,11 @@ h4 {
   transform: translateY(-195px);
 }
 
-.catering_pricing-medium {
-  margin-left: -100px;
-  margin-right: -100px;
+@media screen and (min-width: 700px) {
+  .catering_pricing-medium {
+    margin-left: -100px;
+    margin-right: -100px;
+  }
 }
 
 .catering_pricing-small,
