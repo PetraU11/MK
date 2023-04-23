@@ -289,6 +289,8 @@ border-radius: 10px;
 
 .catering__pricing{
     position:relative;
+    margin-left: auto;
+    margin-right:auto;
 
 
     @include tablet {
@@ -305,6 +307,7 @@ border-radius: 10px;
     border: 5px solid rgb(90, 44, 4); 
     border-radius: 10px;
     width: 340px;
+
     @include tablet{ 
     transform: rotate(270deg);}
     @include desktop {
