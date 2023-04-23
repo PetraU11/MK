@@ -278,7 +278,7 @@ h4 {
 .catering_pricing img {
   border: 5px solid rgb(90, 44, 4);
   border-radius: 10px;
-  width: 300px;
+  width: 360px;
 }
 @media screen and (min-width: 700px) {
   .catering_pricing img {
@@ -294,15 +294,19 @@ h4 {
 .catering-pricing-list {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.6);
-  width: 165px;
-  height: 165px;
+  width: 170px;
+  height: 170px;
   padding: 30px 0;
   margin-left: auto;
   margin-right: auto;
   color: whitesmoke;
-  transform: translateY(-195px);
+  transform: translateY(-205px);
 }
 
+.catering_pricing-medium {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 700px) {
   .catering_pricing-medium {
     margin-left: -100px;
