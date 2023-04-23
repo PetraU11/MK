@@ -259,34 +259,34 @@ h4 {
   margin-left: auto;
 }
 
-.catering_pricing {
+.catering__pricing {
   position: relative;
 }
 @media screen and (min-width: 700px) {
-  .catering_pricing {
+  .catering__pricing {
     display: flex;
     justify-content: center;
     gap: 10px;
   }
 }
 @media screen and (min-width: 1000px) {
-  .catering_pricing {
+  .catering__pricing {
     gap: 25px;
   }
 }
 
-.catering_pricing img {
+.catering__pricing img {
   border: 5px solid rgb(90, 44, 4);
   border-radius: 10px;
-  width: 360px;
+  width: 340px;
 }
 @media screen and (min-width: 700px) {
-  .catering_pricing img {
+  .catering__pricing img {
     transform: rotate(270deg);
   }
 }
 @media screen and (min-width: 1000px) {
-  .catering_pricing img {
+  .catering__pricing img {
     width: 360px;
   }
 }
@@ -303,30 +303,39 @@ h4 {
   transform: translateY(-205px);
 }
 
-.catering_pricing-medium {
+.catering__pricing-medium {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 700px) {
-  .catering_pricing-medium {
+  .catering__pricing-medium {
     margin-left: -100px;
     margin-right: -100px;
   }
 }
 
-.catering_pricing-small,
-.catering_pricing-medium,
-.catering_pricing-large {
+.catering__pricing-small,
+.catering__pricing-medium,
+.catering__pricing-large {
   height: 200px;
 }
 @media screen and (min-width: 700px) {
-  .catering_pricing-small,
-.catering_pricing-medium,
-.catering_pricing-large {
+  .catering__pricing-small,
+.catering__pricing-medium,
+.catering__pricing-large {
     height: auto;
     margin-top: 70px;
     margin-bottom: -100px;
   }
+}
+
+.catering__pricing-small:hover,
+.catering__pricing-small:focus {
+  transform: scale(1.1);
+}
+
+.catering__pricing-small {
+  transition: all 0.5s;
 }
 
 .order {
