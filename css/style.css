@@ -204,7 +204,7 @@ h4 {
 }
 
 .header__hero {
-  background-image: url("../images/header_bc.png");
+  background-image: url("../images/header_bc_small.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -213,6 +213,7 @@ h4 {
 }
 @media screen and (min-width: 700px) {
   .header__hero {
+    background-image: url("../images/header_bc.png");
     grid-column: 1/-1;
     grid-row: 2/3;
   }
@@ -344,10 +345,15 @@ h4 {
 }
 
 .order {
-  background-image: url("../images/order_wrapper_bc.png");
+  background-image: url("../images/order_wrapper_small.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 1000px) {
+  .order {
+    background-image: url("../images/order_wrapper_bc.png");
+  }
 }
 
 .order__wrapper {
@@ -414,13 +420,18 @@ h4 {
 }
 
 .naspici {
-  background-image: url("../images/bar_5.jpg");
+  background-image: url("../images/naspici_small.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: whitesmoke;
   position: relative;
   height: 450px;
+}
+@media screen and (min-width: 1000px) {
+  .naspici {
+    background-image: url("../images/naspici.jpg");
+  }
 }
 
 .naspici__wrapper {

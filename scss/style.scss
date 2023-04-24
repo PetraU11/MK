@@ -222,7 +222,7 @@ h4 {
 
 
 .header__hero{
-    background-image: url("../images/header_bc.png"); //object-fit pro fotky, nastavit height&weight. 
+    background-image: url("../images/header_bc_small.png"); //object-fit pro fotky, nastavit height&weight. 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -231,6 +231,7 @@ h4 {
     //background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/header_introduction.jpg");
     
     @include tablet {
+        background-image: url("../images/header_bc.png");
         grid-column: 1 / -1;
         grid-row: 2 / 3;
     }
@@ -364,10 +365,13 @@ border-radius: 10px;
 //OBJEDNÁVKY//
 
 .order{
-    background-image: url("../images/order_wrapper_bc.png"); //změnit velikost fotky, moc velké, zpomaluje načítaní
+    background-image: url("../images/order_wrapper_small.png"); //změnit velikost fotky, moc velké, zpomaluje načítaní
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    @include desktop {
+        background-image: url("../images/order_wrapper_bc.png");
+    }
 }
 
 .order__wrapper {
@@ -437,13 +441,17 @@ border-radius: 10px;
 
 //NA ŠPICI//
 .naspici {
-background-image: url("../images/bar_5.jpg");
+background-image: url("../images/naspici_small.jpg");
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 color:whitesmoke;
 position:relative;
-height: 450px
+height: 450px;
+@include desktop {background-image: url("../images/naspici.jpg");
+
+}
+ 
 }
 
 .naspici__wrapper {
