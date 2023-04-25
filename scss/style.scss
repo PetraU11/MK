@@ -37,6 +37,12 @@ a {
 h4 {
     margin:0;
 }
+
+.arrow-up {
+    @include tablet {
+        display:none;
+    }
+}
 // a upravit u některých
 
 
@@ -279,6 +285,7 @@ background-color: #55868c42;
 padding: 10px;
 border:5px solid rgb(198, 155, 117);
 border-radius: 10px;
+margin-bottom: 10px;
 //border-radius: 15px 225px 15px 255px/255px 15px 225px 15px;
 
 }
@@ -466,6 +473,14 @@ border-radius: 10px;
 padding: 10px;
 margin-top: 0;
 
+}
+
+.arrow-up.naspici-arrow {
+    position:absolute;
+    top: 90%;
+    left: 47%;
+
+    
 }
 
 
