@@ -305,7 +305,7 @@ h4 {
 .catering__pricing img {
   border: 5px solid rgb(90, 44, 4);
   border-radius: 10px;
-  width: 340px;
+  width: 300px;
 }
 @media screen and (min-width: 700px) {
   .catering__pricing img {
