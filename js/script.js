@@ -16,8 +16,6 @@ emailShown.addEventListener("click",() => {
 })
 
 
-
-
 const phone = document.querySelector("#phone-icon")
 const phoneShown = document.querySelector("#phone-number") 
 
