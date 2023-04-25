@@ -210,7 +210,7 @@ h4 {
 }
 
 .header__hero {
-  background-image: url("../images/header_bc_small.png");
+  background-image: url("../images/header_bc.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -219,7 +219,6 @@ h4 {
 }
 @media screen and (min-width: 700px) {
   .header__hero {
-    background-image: url("../images/header_bc.png");
     grid-column: 1/-1;
     grid-row: 2/3;
   }
@@ -452,6 +451,7 @@ h4 {
   border-radius: 10px;
   padding: 10px;
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .arrow-up.naspici-arrow {
