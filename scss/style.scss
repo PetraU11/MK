@@ -39,6 +39,7 @@ h4 {
 }
 
 .arrow-up {
+    margin-top: 15px;
     @include tablet {
         display:none;
     }
@@ -450,8 +451,9 @@ background-position: center;
 background-repeat: no-repeat;
 color:whitesmoke;
 position:relative;
-height: 470px;
+height: 500px;
 @include desktop {background-image: url("../images/naspici.jpg");
+    height: 450px;
 
 }}
 
@@ -472,7 +474,7 @@ margin-top: 0;
 
 .arrow-up.naspici-arrow {
     position:absolute;
-    top: 90%;
+    top: 85%;
     left: 47%;
     
 
