@@ -32,4 +32,3 @@ phoneShown.addEventListener("click",() => {
     // phone.classList.toggle("header__icons-phoneIconHidden")
 })
 
-
