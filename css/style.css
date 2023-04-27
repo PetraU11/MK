@@ -385,6 +385,9 @@ h4 {
   border-radius: 10px;
 }
 
+.contact {
+  min-height: 300px;
+}
 @media screen and (min-width: 700px) {
   .contact {
     display: grid;
