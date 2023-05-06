@@ -104,8 +104,8 @@ h4 {
 }
 @media screen and (min-width: 1000px) {
   .header__icons a {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 .header__icons * {
