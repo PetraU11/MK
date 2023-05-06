@@ -165,13 +165,22 @@ h4 {
     transform: translate(-50%, -50%); 
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    min-width: 200px;
+    min-width: 250px;
     border-radius: 10px;
      }
      
 &__hero-h1,
 &__hero-h2{
-color:whitesmoke;}
+color:whitesmoke;
+@include tablet{
+    font-size: 2em;
+}
+}
+
+&__hero-h1-sub {
+    font-size: 0.8em;
+    
+}
 }
 
 
