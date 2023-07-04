@@ -294,8 +294,14 @@ h4 {
 @media screen and (min-width: 700px) {
   .catering__pricing {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10px;
     height: 300px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .catering__pricing {
+    gap: 25px;
   }
 }
 
@@ -309,14 +315,35 @@ h4 {
     transform: rotate(270deg);
   }
 }
+@media screen and (min-width: 1000px) {
+  .catering__pricing img {
+    width: 360px;
+  }
+}
 
 .catering__pricing-wrapper {
   height: 200px;
   transition: all 0.5s;
 }
+@media screen and (min-width: 700px) {
+  .catering__pricing-wrapper {
+    height: auto;
+  }
+}
+
 .catering__pricing-wrapper:hover,
 .catering__pricing-wrapper:focus {
   transform: scale(1.1);
+}
+
+.catering__pricing-wrapper.medium {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 700px) {
+  .catering__pricing-wrapper.medium {
+    margin: 0 -120px;
+  }
 }
 
 .catering-pricing-list {
@@ -329,6 +356,12 @@ h4 {
   margin-right: auto;
   color: whitesmoke;
   transform: translateY(-198px);
+}
+@media screen and (min-width: 700px) {
+  .catering-pricing-list {
+    width: 170px;
+    height: 170px;
+  }
 }
 
 .catering__composition {
