@@ -309,9 +309,6 @@ color:whitesmoke;
         justify-content: space-around;
         height: 270px;
     }
-    @include desktop {
-        
-    }
 }
 
 .catering__pricing img {
@@ -323,6 +320,8 @@ color:whitesmoke;
     @include tablet {
         transform: translateX(-65px) rotate(270deg);
     }
+
+   
 }
 
 
