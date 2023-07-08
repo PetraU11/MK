@@ -295,7 +295,7 @@ h4 {
   .catering__pricing {
     display: flex;
     justify-content: space-around;
-    height: 300px;
+    height: 270px;
   }
 }
 .catering__pricing img {
