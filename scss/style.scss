@@ -309,26 +309,32 @@ color:whitesmoke;
         justify-content: space-around;
         height: 300px;
     }
-  
+    @include desktop {
+        
+    }
 }
 
 .catering__pricing img {
     border: 5px solid rgb(90, 44, 4); 
     border-radius: 10px;
     width: 300px;
-    @include tablet{ 
-    transform: rotate(270deg);}
-   
+    min-height:180px;
+     
+    @include tablet {
+        transform: translateX(-65px) rotate(270deg);
+    }
 }
 
 
 .catering__pricing-wrapper{
     height: 200px;
-    transition: all .5s;
-  
+    transition: all .5s; 
+
     @include tablet {
-     
-    }  
+        width: 150px;
+    }
+    
+   
 }
 
 .catering__pricing-wrapper:hover ,
