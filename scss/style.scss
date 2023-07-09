@@ -319,9 +319,7 @@ color:whitesmoke;
      
     @include tablet {
         transform: translateX(-65px) rotate(270deg);
-    }
-
-   
+    } 
 }
 
 
@@ -331,16 +329,13 @@ color:whitesmoke;
 
     @include tablet {
         width: 150px;
-    }
-    
-   
+    } 
 }
 
 .catering__pricing-wrapper:hover ,
 .catering__pricing-wrapper:focus  {
     transform: scale(1.1); 
 }
-
 
 .catering-pricing-list {
     border-radius: 50%;
