@@ -353,10 +353,23 @@ h4 {
   margin-right: auto;
 }
 
-.list__menu-price {
-  margin-left: 20px;
+.list__menu-product {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 700px) {
+  .list__menu-product {
+    width: auto;
+    display: inline-block;
+  }
 }
 
+.list__showhide {
+  font-weight: bold;
+  text-decoration: underline;
+}
 @media screen and (min-width: 700px) {
   .list__showhide {
     display: none;
@@ -367,8 +380,13 @@ h4 {
   display: none;
 }
 
+.list__wrapper ul {
+  padding-left: 0;
+}
+
 .list__list.second {
   display: none;
+  margin-top: 0;
 }
 @media screen and (min-width: 700px) {
   .list__list.second {

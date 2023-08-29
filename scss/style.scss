@@ -365,12 +365,30 @@ color:whitesmoke;
     margin-right:auto;
 }
 
+.list__menu-product {
+    display:block;
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    @include tablet{
+     width:auto;
+     display:inline-block;
+    }
+}
 
-.list__menu-price {
-    margin-left: 20px;
+.list__menu-price{
+    @include tablet {
+    
+        
+       
+    }
 }
 
 .list__showhide {
+   
+    font-weight: bold;
+    text-decoration: underline;
+
     @include tablet {
         display:none;
     }
@@ -381,12 +399,20 @@ color:whitesmoke;
  
 }
 
+.list__wrapper ul {
+    padding-left:0;
+  
+}
+
+
 
 .list__list.second {
     display:none;
+    margin-top:0;
     @include tablet {
         display:inline-block;
     }
+   
 }
 
 //OBJEDNÁVKY//
