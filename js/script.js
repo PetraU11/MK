@@ -32,3 +32,20 @@ phoneShown.addEventListener("click",() => {
     // phone.classList.toggle("header__icons-phoneIconHidden")
 })
 
+
+
+const showButton = document.getElementById("showList")
+const hideButton = document.getElementById("hideList")
+const listPartTwo = document.getElementById("listSecondPart")
+
+showButton.addEventListener("click", () => {
+listPartTwo.style.display = "inline-block"
+showButton.style.display = "none"
+hideButton.style.display = "inline-block"
+})
+
+hideButton.addEventListener("click", () => {
+    listPartTwo.style.display = "none"
+    hideButton.style.display = "none"
+    showButton.style.display = "inline-block"
+})
