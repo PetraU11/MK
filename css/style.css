@@ -380,8 +380,11 @@ h4 {
   display: none;
 }
 
-.list__wrapper ul {
-  padding-left: 0;
+.list__list,
+.list__list-two {
+  background-color: rgb(199, 162, 131);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .list__list.second {
