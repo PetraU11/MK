@@ -58,28 +58,23 @@ h4 {
         grid-template-columns: 5% 2fr 1fr 5%; 
     }
 
-    @include desktop {
-        grid-template-columns: 5% 1fr 1fr 70px 5%;
-        align-items: center; 
-    }
 
 &__topbar {
     height: 45px;
     max-width: 1200px; //celý dokument!!! //
     margin-top: 15px;
     margin-bottom: 15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
     
     @include tablet {
       grid-column: 2 / 3;
       grid-row: 1 / 2; 
       }
-  
-    @include desktop {
-      grid-column: 2 / 3;
-      grid-row: 1 / 2;
-      margin-bottom: 0px;
-    margin-top:0px;
-  }}
+  }
 
 &__icons{
     padding-top: 10px;
@@ -95,28 +90,18 @@ h4 {
         justify-self: center;
         
      }
-    @include desktop {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
-        justify-self: end;
-        
-     }}
+    }
 
 &__icons a{
     margin-left: 30px;
     margin-right: 30px;  
-    @include desktop {
-        margin-left: 20px;
-        margin-right: 20px;   
     }
-}
 
 &__icons * {
     cursor:pointer;
 }
 
 &__icons-logo {
-    display: none;
    
     @include tablet {
         grid-column: 3 / 4;
@@ -126,13 +111,7 @@ h4 {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    @include desktop {
-        grid-column: 4 / 5;
-        display:inline-block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-  
-    }
+    
 }
 
 &__icons p {
@@ -174,29 +153,65 @@ h4 {
 color:whitesmoke;
 @include tablet{
     font-size: 2em;
-}
-}
+}}
 
 &__hero-h1-sub {
     font-size: 0.8em;
-    
+    }
+
 }
+.menu__bars{
+    @include tablet {
+        display:none;
+    }
 }
 
+.bar { 
+   display:block;
+    width: 35px;
+    height: 5px;
+    background-color: rgb(90, 44, 4);
+    border-radius: 10%;
+    
+
+    @include tablet {
+        display:none;
+    }}
+
+    .bar:nth-child(2) {
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+
+    .bar.first {
+        transform:rotate(45deg);
+        transition: transform 0.4s ease-in-out;
+    }
+    
+    .bar.second {
+        display:none;
+    }
+    
+    .bar.third {
+        transform:rotate(-45deg);
+        transition: transform 0.4s ease-in-out;
+    }
+    
+     
 
 .menu__list {
+    display:none;
+    @include tablet {
     display:flex;
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;  
-    max-width: 450px;
+     max-width: 450px;
     font-size: 0.9em;
     font-weight: bolder;
-    margin-left: auto;
-    margin-right: auto;
-    @include tablet {
     margin-left: 0;
     margin-right: 0;
+    
     }}
 
 .menu__item{
@@ -376,16 +391,8 @@ color:whitesmoke;
     }
 }
 
-.list__menu-price{
-    @include tablet {
-    
-        
-       
-    }
-}
 
 .list__showhide {
-   
     font-weight: bold;
     text-decoration: underline;
 
@@ -396,13 +403,11 @@ color:whitesmoke;
 
 .list__showhide.hide {
     display:none;
- 
 }
-
 
 .list__list, 
 .list__list-two{
-    background-color: rgb(199, 162, 131);
+    background-color:rgb(198, 155, 117);
     padding: 20px;
     border-radius: 10px;
 

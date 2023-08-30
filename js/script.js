@@ -1,3 +1,13 @@
+const hamburger = document.getElementById("menuBars")
+const hamburgerMenu = document.getElementById("menu__list")
+
+hamburger.addEventListener("click", () => {
+    hamburgerMenu.style.display = "inline-block"
+    
+})
+
+
+
 
 const email = document.querySelector("#email-icon")
 const emailShown = document.querySelector("#email-address")
