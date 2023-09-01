@@ -1,10 +1,9 @@
 const hamburger = document.getElementById("menuBars")
-const hamburgerMenu = document.getElementById("menu__list")
+const hamburgerMenu = document.getElementById("menuList")
+const bar1 = document.getElementById("bar1")
+const bar2 = document.getElementById("bar2")
+const bar3 = document.getElementById("bar3")
 
-hamburger.addEventListener("click", () => {
-    hamburgerMenu.style.display = "inline-block"
-    
-})
 
 
 
@@ -58,4 +57,5 @@ hideButton.addEventListener("click", () => {
     listPartTwo.style.display = "none"
     hideButton.style.display = "none"
     showButton.style.display = "inline-block"
+
 })

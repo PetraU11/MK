@@ -1,7 +1,8 @@
 *, :after, :before { box-sizing: border-box;}
 
 @mixin tablet { 
-    @media screen and (min-width: 700px) {@content; }}
+    @media screen and (min-width: 800px) {@content; }}
+
 
 @mixin desktop {
     @media screen and (min-width: 1000px) {@content; }}
@@ -60,10 +61,10 @@ h4 {
 
 
 &__topbar {
-    height: 45px;
+    height: 50px;
     max-width: 1200px; //celý dokument!!! //
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -71,7 +72,7 @@ h4 {
     margin-right: 50px;
     
     @include tablet {
-      grid-column: 2 / 3;
+      grid-column: 1 / 5;
       grid-row: 1 / 2; 
       }
   }
@@ -104,12 +105,9 @@ h4 {
 &__icons-logo {
    
     @include tablet {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
+        width: 70px;
         display:inline-block;
-        justify-self: end;
-        margin-top: 10px;
-        margin-bottom: 10px;
+
     }
     
 }
@@ -183,16 +181,16 @@ color:whitesmoke;
         margin-bottom:10px;
     }
 
-    .bar.first {
+    .bar-one {
         transform:rotate(45deg);
         transition: transform 0.4s ease-in-out;
     }
     
-    .bar.second {
+    .bar-two {
         display:none;
     }
     
-    .bar.third {
+    .bar-three {
         transform:rotate(-45deg);
         transition: transform 0.4s ease-in-out;
     }
@@ -203,14 +201,12 @@ color:whitesmoke;
     display:none;
     @include tablet {
     display:flex;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;  
-     max-width: 450px;
-    font-size: 0.9em;
+    justify-content: space-between; 
     font-weight: bolder;
     margin-left: 0;
     margin-right: 0;
+    text-align: center;
+    padding-left: 0px;
     
     }}
 
@@ -219,13 +215,18 @@ color:whitesmoke;
 }
 
 .menu__link {
+    @include tablet {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 5px;
+    padding-right: 20px;
+    padding-left: 20px;}
 }
 
+
 .menu__link:hover {
-    background-color:  #55868c42;
+    text-decoration:underline;
+    font-size: 1.2rem;
+
 }
 
 
