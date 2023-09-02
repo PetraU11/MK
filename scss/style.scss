@@ -182,8 +182,8 @@ color:whitesmoke;
 
 .bar { 
    display:block;
-    width: 35px; //35
-    height: 5px; // 5
+    width: 35px;
+    height: 5px; 
     background-color: rgb(90, 44, 4);
     border-radius: 10%;
     
@@ -217,6 +217,7 @@ color:whitesmoke;
 
 .menu__list {
     display:none;
+
     @include tablet {
     display:flex;
     justify-content: space-between; 
@@ -237,15 +238,25 @@ color:whitesmoke;
     z-index: 100;
     background-color: rgba(198, 155, 117);
     width: 100vw;
+    padding-left:0;
 }
 
 .menu__item{
-    margin-top: 50px;
-    margin-bottom:50px;
+    padding-top: 30px;
+    padding-bottom:30px;
     @include tablet {
         border-right: 3px solid black;
+        padding-top: 0px;
+        padding-bottom:0px;
+       
     }
 }
+
+.menu__item:hover {
+    background-color: yellow;
+}
+
+
 
 .menu__link {
     @include tablet {
