@@ -93,6 +93,7 @@ h4 {
   }
 
 &__icons{
+    height: 80px;
     padding-top: 10px;
     padding-bottom: 10px;
     display:flex;
@@ -413,7 +414,7 @@ color:whitesmoke;
     font-weight: bold;
     text-decoration: underline;
 
-    @include tablet {
+    @include desktop {
         display:none;
     }
 }
@@ -438,7 +439,7 @@ color:whitesmoke;
 .list__list.second {
     display:none;
     
-    @include tablet {
+    @include desktop {
         display:inline-block;
         margin-top: -16px;
     }
