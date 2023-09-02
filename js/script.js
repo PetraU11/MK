@@ -1,21 +1,39 @@
 const hamburger = document.getElementById("menuBars")
 const hamburgerMenu = document.getElementById("menuList")
-const menuItem = document.querySelectorAll(".menu__item")
 const bar1 = document.getElementById("bar1")
 const bar2 = document.getElementById("bar2")
 const bar3 = document.getElementById("bar3")
 
 hamburger.addEventListener("click", () => {
-    hamburgerMenu.style.display = "block"
-    hamburgerMenu.style.position = "absolute"
-    hamburgerMenu.style.right = "0%"
-    hamburgerMenu.style.top = "70px"
-    hamburgerMenu.style.zIndex = "100"
-    hamburgerMenu.style.backgroundColor = "rgb(198, 155, 117)"
-    hamburgerMenu.style.border = "none"
-    
+   if (hamburgerMenu.classList.contains("open")){
+    hamburgerMenu.classList.remove("open")
+    bar1.classList.remove("one")
+    bar2.classList.remove("two")
+    bar3.classList.remove("three")
 
+} else {
+    hamburgerMenu.classList.add("open")
+    bar1.classList.add("one")
+    bar2.classList.add("two")
+    bar3.classList.add("three")
+   
+}
 })
+
+let removeClass = () => {
+    if(window.innerWidth > 699){
+        hamburgerMenu.classList.remove("open")
+    } else if ( window.innerWidth < 700){
+    bar1.classList.remove("one")
+    bar2.classList.remove("two")
+    bar3.classList.remove("three")
+    }}
+
+window.addEventListener("resize", removeClass)
+removeClass()
+
+
+
 
 
 
