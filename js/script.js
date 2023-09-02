@@ -1,10 +1,21 @@
 const hamburger = document.getElementById("menuBars")
 const hamburgerMenu = document.getElementById("menuList")
+const menuItem = document.querySelectorAll(".menu__item")
 const bar1 = document.getElementById("bar1")
 const bar2 = document.getElementById("bar2")
 const bar3 = document.getElementById("bar3")
 
+hamburger.addEventListener("click", () => {
+    hamburgerMenu.style.display = "block"
+    hamburgerMenu.style.position = "absolute"
+    hamburgerMenu.style.right = "0%"
+    hamburgerMenu.style.top = "70px"
+    hamburgerMenu.style.zIndex = "100"
+    hamburgerMenu.style.backgroundColor = "rgb(198, 155, 117)"
+    hamburgerMenu.style.border = "none"
+    
 
+})
 
 
 
