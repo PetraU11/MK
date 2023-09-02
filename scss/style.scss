@@ -218,7 +218,6 @@ color:whitesmoke;
 
 .menu__list {
     display:none;
-
     @include tablet {
     display:flex;
     justify-content: space-between; 
@@ -234,6 +233,7 @@ color:whitesmoke;
 .menu__list.open {
     display: block;
     position:absolute;
+    font-weight: bold;
     right: 0%;
     top:60px;
     z-index: 100;
@@ -254,8 +254,12 @@ color:whitesmoke;
 }
 
 .menu__item:hover {
-    background-color: yellow;
+    background-color: #55868c42;
+    @include tablet {
+        background-color: transparent;
+    }
 }
+
 
 
 

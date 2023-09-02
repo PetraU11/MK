@@ -16,7 +16,6 @@ hamburger.addEventListener("click", () => {
     bar1.classList.add("one")
     bar2.classList.add("two")
     bar3.classList.add("three")
-   
 }
 })
 

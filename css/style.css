@@ -218,6 +218,7 @@ h4 {
 .menu__list.open {
   display: block;
   position: absolute;
+  font-weight: bold;
   right: 0%;
   top: 60px;
   z-index: 100;
@@ -239,7 +240,12 @@ h4 {
 }
 
 .menu__item:hover {
-  background-color: yellow;
+  background-color: rgba(85, 134, 140, 0.2588235294);
+}
+@media screen and (min-width: 700px) {
+  .menu__item:hover {
+    background-color: transparent;
+  }
 }
 
 @media screen and (min-width: 700px) {
