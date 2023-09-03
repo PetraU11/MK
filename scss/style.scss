@@ -73,11 +73,13 @@ h4 {
     margin-right: 30px;
     
     @include tablet {
-      height: 90px;
+      height: 110px;
       grid-column: 1 / 5;
       grid-row: 1 / 2; 
       margin-left: 10px;
       margin-right: 10px;
+      
+      
       }
 
     @media screen and (min-width: 800px) {
@@ -94,13 +96,16 @@ h4 {
   }
 
 &__icons{
-    height: 90px;
+    height: 80px;
     padding-top: 10px;
     padding-bottom: 10px;
     display:flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
+    max-width: 300px;
+    justify-content: center;
+    margin-right:auto;
+    margin-left:auto;
+    font-weight: bold;
 
     @include tablet {
         grid-column: 1 / -1;
