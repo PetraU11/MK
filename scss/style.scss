@@ -109,9 +109,7 @@ h4 {
 
     @include tablet {
         grid-column: 1 / -1;
-        grid-row: 3 / 4;
-        justify-self: center;
-        
+        grid-row: 3 / 4; 
      }
     }
 
@@ -124,15 +122,6 @@ h4 {
     cursor:pointer;
 }
 
-&__icons-logo {
-   
-    @include tablet {
-        width: 70px;
-        display:inline-block;
-
-    }
-    
-}
 
 &__icons p {
     margin-top:0;

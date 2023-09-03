@@ -96,7 +96,6 @@ h4 {
   .header__icons {
     grid-column: 1/-1;
     grid-row: 3/4;
-    justify-self: center;
   }
 }
 .header__icons a {
@@ -105,12 +104,6 @@ h4 {
 }
 .header__icons * {
   cursor: pointer;
-}
-@media screen and (min-width: 700px) {
-  .header__icons-logo {
-    width: 70px;
-    display: inline-block;
-  }
 }
 .header__icons p {
   margin-top: 0;
