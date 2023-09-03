@@ -179,7 +179,7 @@ color:whitesmoke;
    display:block;
     width: 35px;
     height: 5px; 
-    background-color: rgb(90, 44, 4);
+    background-color: rgb(44, 29, 16);
     border-radius: 10%;
     
 
@@ -237,8 +237,8 @@ color:whitesmoke;
 }
 
 .menu__item{
-    padding-top: 30px;
-    padding-bottom:30px;
+    padding-top: 20px;
+    padding-bottom:40px;
     @include tablet {
         border-right: 3px solid black;
         padding-top: 0px;
