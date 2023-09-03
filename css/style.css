@@ -236,6 +236,7 @@ h4 {
     border-right: 3px solid black;
     padding-top: 0px;
     padding-bottom: 0px;
+    padding-right: 10px;
   }
 }
 
@@ -248,18 +249,30 @@ h4 {
   }
 }
 
+.menu__item:active {
+  background-color: rgba(45, 74, 78, 0.2588235294);
+}
+@media screen and (min-width: 700px) {
+  .menu__item:active {
+    background-color: transparent;
+  }
+}
+
 @media screen and (min-width: 700px) {
   .menu__link {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 20px;
-    padding-left: 20px;
   }
 }
 
 .menu__link:hover {
   text-decoration: underline;
   font-size: 1.2rem;
+}
+
+.menu__link:active {
+  font-size: 1rem;
 }
 
 .header__icons-emailAddressHidden {
