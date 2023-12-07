@@ -34,6 +34,10 @@ removeClass()
 
 
 
+
+
+
+
 const showButton = document.getElementById("showList")
 const hideButton = document.getElementById("hideList")
 const listPartTwo = document.getElementById("listSecondPart")

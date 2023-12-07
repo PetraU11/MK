@@ -10,15 +10,21 @@
     @media screen and (min-width: 1000px) {@content; }}
 
 
-// OBECNÉ //
+$color-text: rgb(44, 29, 16);
+$color-section_second:  rgba(198, 155, 117, 0.451);
+$color-header_bg: rgb(198, 155, 117);
+$color-header-text-bg: rgba(0, 0, 0, 0.5);
+$color-white-text:whitesmoke;
 
+
+// OBECNÉ //
 
 
 body{
     margin: 0;
     padding:0;
     text-align:center; 
-    color:  rgb(44, 29, 16);
+    color:$color-text;
     font-size: 1.1rem;
     font-family: 'Lora', serif;
 }
@@ -28,7 +34,7 @@ main section{
 }
 
 main section:nth-child(2n){
-    background-color: rgba(198, 155, 117, 0.451);
+    background-color: $color-section_second;
 }
 
 ul{
@@ -57,7 +63,7 @@ h4 {
 //HEADER//
 
 .header{
-    background-color: rgb(198, 155, 117);
+    background-color: $color-header_bg;
     
 
     @include tablet {
@@ -87,9 +93,7 @@ h4 {
     @include desktop{
         margin-left:auto;
         margin-right:auto;
-    }
-
-  }
+    }}
 
 &__icons{
     height: 90px;
@@ -147,7 +151,7 @@ h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: $color-header-text-bg;
     padding: 10px;
     min-width: 250px;
     border-radius: 10px;
@@ -155,7 +159,7 @@ h4 {
      
 &__hero-h1,
 &__hero-h2{
-color:whitesmoke;
+color: $color-white-text;
 @include tablet{
     font-size: 2em;
 }}
@@ -175,7 +179,7 @@ color:whitesmoke;
    display:block;
     width: 35px;
     height: 5px; 
-    background-color: rgb(44, 29, 16);
+    background-color: $color-text;
     border-radius: 10%;
     
 
@@ -227,7 +231,7 @@ color:whitesmoke;
     right: 0%;
     top:60px;
     z-index: 100;
-    background-color: rgba(198, 155, 117);
+    background-color: $color-header_bg;
     width: 100%;
     padding-left:0;
 }
@@ -236,7 +240,7 @@ color:whitesmoke;
     padding-top: 20px;
     padding-bottom:40px;
     @include tablet {
-        border-right: 3px solid black;
+        border-right: 3px solid $color-text;
         padding-top: 0px;
         padding-bottom:0px;
         padding-right: 10px;
@@ -343,7 +347,7 @@ color:whitesmoke;
     &__wrapper {
         background-color: #55868c42;
         padding: 10px;
-        border:5px solid rgb(198, 155, 117);
+        border:5px solid $color-header_bg;
         border-radius: 10px;
         margin-bottom: 10px;
         }
@@ -403,7 +407,7 @@ color:whitesmoke;
 
 .catering-pricing-list {
     border-radius: 50%;
-    background-color:rgba(0, 0, 0, 0.6) ;
+    background-color:$color-header-text-bg ;
     width: 170px;
     height: 170px;
     padding: 30px 0;
@@ -473,8 +477,7 @@ color:whitesmoke;
     @include desktop {
         display:inline-block;
         margin-top: -16px;
-    }
-   
+    }  
 }
 
 .list__seasonal-header {
@@ -497,7 +500,7 @@ color:whitesmoke;
         background-color: #cfe5e8e2;
         padding: 10px;
         margin: 25px auto;
-        border:5px solid rgb(198, 155, 117);
+        border:5px solid $color-header_bg;
         border-radius: 10px;
         }
 }
@@ -521,7 +524,10 @@ color:whitesmoke;
 &__header{
     @include tablet{
     grid-row: 1 / 2;
-    grid-column: 3 / 4;}  
+    grid-column: 1 / 4;} 
+    @include desktop{
+        grid-column: 1 / -1;
+    }
     }
 
 
@@ -530,18 +536,20 @@ color:whitesmoke;
     max-width: 400px;
     justify-self: right;
     align-self: center;
-    grid-row: 1 / 3;
-    grid-column: 2 / 3;
-    }  
-}
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;} 
+    
+    } 
 
 &__address {
     @include tablet{
     width: 300px;
     justify-self: center;
+    align-self: center;
     grid-row: 2 / 3;
     grid-column: 3 / 4;
     margin-top: -15px;}
+    
 }
 
 &__map {
@@ -549,7 +557,7 @@ color:whitesmoke;
     @include desktop {
         display:inline-block;
         grid-column: 4 / 5;
-        grid-row: 1 / 3;
+        grid-row: 2 / 3;
         align-self: center;
     }
 }
@@ -568,7 +576,7 @@ background-image: url("../images/naspici_small.jpg");
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-color:whitesmoke;
+color:$color-white-text;
 position:relative;
 height: 500px;
 @include desktop {background-image: url("../images/naspici.jpg");
@@ -582,12 +590,21 @@ height: 500px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: $color-header-text-bg);
     border-radius: 10px;
     padding: 10px;
     margin-top: 0;
+    color:whitesmoke;
+    
     }
+    
+    &__wrapper-link--color{
+    color:$color-white-text;
+    text-decoration: underline;
+    }
+
 }
+
 
 
 .arrow-up.naspici-arrow {
@@ -601,7 +618,7 @@ height: 500px;
 //FOOTER//
 
 .footer {
-    background-color:rgb(198, 155, 117);
+    background-color:$color-header_bg;
     height: 60px;
     padding-top: 20px;
   
