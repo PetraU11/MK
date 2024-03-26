@@ -24,13 +24,15 @@
 <body>
 
 
-<header class="header" > 
+<header class="header"> 
 
 <section class="header__topbar" id="header__menu"> 
 
-<a href="https://www.facebook.com/profile.php?id=100064211496166"> <img class="header__icons-logo" src="images/icons/fb_black_full_64.png" alt="logo Masové korytko" width="50"></a>
+<h1 class="header__hero-h1"> Masové koryta Ostrava <br> <span class="header__hero-h1-sub"> ... pořádná porce masa a catering na míru.</span></h1>
 
-<nav class="header__topbar-menu"> 
+
+
+    <nav class="header__topbar-menu"> 
     
     <div class="menu__bars" id="menuBars">
     <span class="bar" id="bar1">  </span>
@@ -39,47 +41,51 @@
     </div>
 
     <ul class="menu__list" id="menuList"> 
-        <a class="menu__link" href="#O_nas"><li class="menu__item">Úvod</li></a>
-        <a class="menu__link" href="#Koryto"><li class="menu__item">Masové koryto</li></a>
+        <a class="menu__link" href="#Koryto"><li class="menu__item">Korýtko</li></a>
         <a class="menu__link" href="#Nabídka_cateringu"><li class="menu__item">Catering</li></a>
         <a class="menu__link" href="#Objednavky"><li class="menu__item">Objednávky</li></a>
-        <a class="menu__link" href="#Kontakt"><li class="menu__item">Kontakt</li>  </a>  
+        <a class="menu__link" href="#Galerie"><li class="menu__item">Galerie</li>  </a>
+        <a class="menu__link" href="#Reference"><li class="menu__item">Reference</li>  </a>
+        <a class="menu__link" href="#Kontakt"><li class="menu__item">Kontakt</li>  </a> 
+          
     </ul>
 </nav>
 
 </section>
 
 
-
 <section class="header__hero">
 <div class="header__hero-heading"> 
-<h1 class="header__hero-h1"> Masové koryta Ostrava <br> <span class="header__hero-h1-sub"> ... pořádná porce masa a catering na míru.</span></h1>
+<p> Pořádáte nějakou akci a chcete mít hodně masa bez práce? Pak jsem tu pro Vás.</p>
+<p> Na vaši rodinnou oslavu, firemní školení či oslavu narozenin Vám na míru zajistím také catering, plný jiných dobrot jako je tatarák, pečená hovězí žebírka,
+rolády, obložené mísy a mnoho dalších pochutin.</p>
 
 </div>
 </section>
 
-<section class="header__icons"> 
+
+
+
+<div class="header__icons"> 
+    <a href="https://www.facebook.com/profile.php?id=100064211496166"> <img class="header__icons-logo" src="images/icons/fb_black_full_64.png" alt="logo Masové korytko" width="50"></a>
     <p> +420 725 815 017   </p>
     <p>  masovekoryta.ostrava@gmail.com </p>
-</section>  
+</div> 
 
 </header>
 
 
 
+
+
+
+
+
+
+
+
 <main class="main"> 
 
-<section class="about" id="O_nas">
-    
-    <div class="about__wrapper">
-<p> Pořádáte nějakou akci a chcete mít hodně masa bez práce? Pak jsem tu pro Vás.</p>
-<p> Na vaši rodinnou oslavu, firemní školení či oslavu narozenin Vám na míru zajistím také catering, plný jiných dobrot jako je tatarák, pečená hovězí žebírka,
-rolády, obložené mísy a mnoho dalších pochutin.</p>
-    </div>
-
-  <a href="#header__menu">  <img class="arrow-up" src="images/arrow-b-32.png" alt="šipka nahoru"></a> 
-
-</section>
 
 
 <section class="catering" id="Koryto"> 
@@ -403,6 +409,58 @@ Cena dopravy: 5 Kč za každý ujetý km</p>
 
 
 
+<section class="reference" id="Reference"> 
+<div class="reference__wrapper"> 
+
+<h2> Reference</h2>
+
+
+
+
+<form class="" action="" method=""> 
+
+    <p> Chutnalo Vám? Podělte se o svou zkušenost!</p>
+   
+         <div class="form">
+        <label for="jmeno">Jméno <span class="required"> * </span> </label>
+        <input type="text" name="jmeno" id="jmeno" maxlength="60"
+        placeholder="Honza" autofocus required>
+        </div>
+
+        <div class="form timeDate">
+            <div class="form date">
+            <label for="datum"> Datum <span class="required"> * </span></label>
+            <input type="date" name="datum" id="datum" required>
+            </div>
+
+        <div class="form">
+        <label for="info"> Podělte se o Vaši zkušenost.<span class="required"> * </span> </label>
+        <textarea name="info" id="info" cols="15" rows="5" required>  
+        </textarea>
+        </div> 
+            
+        <p class="form_submit-done">&check; Děkujeme za Vaší recenzi. </p>    
+        <input type="submit" value="Odeslat" class="booking-button">
+
+
+</form>
+
+</div>
+</section>
+
+
+
+<section class="gallery" id="Galerie"> 
+    <div class="gallery__wrapper"> 
+    
+<h2> Galerie </h2>    
+    
+    </div>
+    </section>
+
+
+
+
 
 
 <section class="contact" id="Kontakt">
@@ -435,9 +493,6 @@ Cena dopravy: 5 Kč za každý ujetý km</p>
  </section>
 
 
-
-
-
  <section class="naspici">
 
 <div class="naspici__wrapper">
@@ -455,6 +510,10 @@ Cena dopravy: 5 Kč za každý ujetý km</p>
 
 
 </main>
+
+
+
+
 
 <footer class="footer"> 
 

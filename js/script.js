@@ -6,12 +6,14 @@ const bar3 = document.getElementById("bar3")
 
 hamburger.addEventListener("click", () => {
    if (hamburgerMenu.classList.contains("open")){
+    hamburger.style.marginTop = "0px"
     hamburgerMenu.classList.remove("open")
     bar1.classList.remove("one")
     bar2.classList.remove("two")
     bar3.classList.remove("three")
 
 } else {
+    hamburger.style.marginTop = "36px"
     hamburgerMenu.classList.add("open")
     bar1.classList.add("one")
     bar2.classList.add("two")
@@ -44,6 +46,7 @@ const listPartTwo = document.getElementById("listSecondPart")
 
 showButton.addEventListener("click", () => {
 listPartTwo.style.display = "inline-block"
+listPartTwo.style.marginTop = "-16px"
 showButton.style.display = "none"
 hideButton.style.display = "inline-block"
 })
@@ -54,3 +57,7 @@ hideButton.addEventListener("click", () => {
     showButton.style.display = "inline-block"
 
 })
+
+
+
+

@@ -10,10 +10,10 @@
     @media screen and (min-width: 1000px) {@content; }}
 
 
-$color-text: rgb(44, 29, 16);
-$color-section_second:  rgba(198, 155, 117, 0.451);
-$color-header_bg: rgb(198, 155, 117);
-$color-header-text-bg: rgba(0, 0, 0, 0.5);
+$color-text: #230C0F;
+$color-section_second:  #230C0F;
+$color-header_bg: #230C0F;
+$color-header-text-bg: #230c0fd5;
 $color-white-text:whitesmoke;
 
 
@@ -35,6 +35,7 @@ main section{
 
 main section:nth-child(2n){
     background-color: $color-section_second;
+    color:$color-white-text;
 }
 
 ul{
@@ -64,48 +65,64 @@ h4 {
 
 .header{
     background-color: $color-header_bg;
-    
+    color: $color-white-text;
 
-    @include tablet {
+    @include desktop {
         display:grid;
-        grid-template-columns: 5% 1fr 1fr 5%; 
+        grid-template-columns:  1fr 1fr; 
     }
 
 
 &__topbar {
-    height: 80px;
-    max-width: 1200px; //celý dokument!!! //
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 30px;
-    margin-right: 30px;
-    
+   padding:30px;
     @include tablet {
-      height: 110px;
-      grid-column: 1 / 5;
-      grid-row: 1 / 2; 
-      margin-left: 40px;
-      margin-right: 10px;
-      }
-
+    padding-bottom:0px;
+    }
 
     @include desktop{
+        max-width: 1300px;
         margin-left:auto;
         margin-right:auto;
+        grid-row: 1 / 2;
+        grid-column: 1/-1;
+        display:grid;
+        grid-template-columns: 2% 1fr 1fr 2%; 
     }}
 
+    &__hero-h1{
+        font-size:1.8em;
+        text-align: center;
+        margin-top:0;
+        margin-left:0;
+        margin-bottom:40px;
+        @include desktop {
+            margin:0;
+            font-size:1.8em;
+            text-align: left;
+            margin-left: 50px;
+            grid-row: 1/2;
+            grid-column:1/-1;
+           align-content:center;
+        }
+         
+    }
+    
+    &__hero-h1-sub {
+        font-size: 0.7em;
+        }
+    
+    
+    &__topbar-menu{
+        grid-column: 3/4;
+    }
+
 &__icons{
-    height: 90px;
     padding-top: 20px;
     padding-bottom: 15px;
-    display:flex;
-    flex-wrap: wrap;
     max-width: 300px;
-    justify-content: center;
-    margin-right:auto;
-    margin-left:auto;
     font-weight: bold;
+    margin-left:auto;
+    margin-right:auto;
 
     @include tablet {
         grid-column: 1 / -1;
@@ -113,20 +130,7 @@ h4 {
      }
     }
 
-&__icons a{
-    margin-left: 30px;
-    margin-right: 30px;  
-    }
 
-&__icons * {
-    cursor:pointer;
-}
-
-
-&__icons p {
-    margin-top:0;
-    margin-bottom:0;
-}
 
 &__hero{
     background-image: url("../images/header_bc.png"); //object-fit pro fotky, nastavit height&weight. 
@@ -142,6 +146,7 @@ h4 {
     }
 
     @include desktop {
+        height: 500px;
         grid-column: 1 / -1;
         grid-row: 2 / 3;
     }}
@@ -153,22 +158,15 @@ h4 {
     transform: translate(-50%, -50%); 
     background-color: $color-header-text-bg;
     padding: 10px;
-    min-width: 250px;
+    min-width: 320px;
     border-radius: 10px;
+    line-height: 28px;
      }
      
-&__hero-h1,
-&__hero-h2{
-color: $color-white-text;
-@include tablet{
-    font-size: 2em;
-}}
-
-&__hero-h1-sub {
-    font-size: 0.8em;
-    }
 
 }
+
+
 .menu__bars{
     @include tablet {
         display:none;
@@ -177,9 +175,11 @@ color: $color-white-text;
 
 .bar { 
    display:block;
+   margin-left:auto;
+   margin-right:auto;
     width: 35px;
     height: 5px; 
-    background-color: $color-text;
+    background-color: whitesmoke;
     border-radius: 10%;
     
 
@@ -214,22 +214,18 @@ color: $color-white-text;
     display:none;
     @include tablet {
     display:flex;
-    justify-content: space-between; 
+    justify-content:space-around; 
     font-weight: bolder;
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center;
-    padding-left: 0px;}
-    @include desktop {
-    margin-left: 50px;
-    }}
+    margin-bottom:0px;
+    padding-left:0px;
+   }}
 
 .menu__list.open {
     display: block;
     position:absolute;
     font-weight: bold;
     right: 0%;
-    top:60px;
+    top:155px;
     z-index: 100;
     background-color: $color-header_bg;
     width: 100%;
@@ -237,10 +233,12 @@ color: $color-white-text;
 }
 
 .menu__item{
-    padding-top: 20px;
-    padding-bottom:40px;
+    padding-top: 30px;
+    padding-bottom:30px;
+    border-bottom: 3px solid whitesmoke;
     @include tablet {
-        border-right: 3px solid $color-text;
+        border-bottom: none;
+        border-right: 3px solid whitesmoke;
         padding-top: 0px;
         padding-bottom:0px;
         padding-right: 10px;
@@ -266,6 +264,7 @@ color: $color-white-text;
 
 
 .menu__link {
+    color:whitesmoke;
     @include tablet {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -380,7 +379,7 @@ color: $color-white-text;
 
 
 .catering__pricing img {
-    border: 5px solid rgb(90, 44, 4); 
+    border: 5px solid $color-header_bg; 
     border-radius: 10px;
     width: 300px;
     min-height:180px;
@@ -413,7 +412,7 @@ color: $color-white-text;
     padding: 30px 0;
     margin-left:auto;
     margin-right:auto;
-    color:whitesmoke;
+    color:$color-white-text;
     transform:translateY(-198px);
 
 }
@@ -449,9 +448,7 @@ color: $color-white-text;
     font-weight: bold;
     text-decoration: underline;
 
-    @include desktop {
-        display:none;
-    }
+    
 }
 
 .list__showhide.hide {
@@ -460,7 +457,8 @@ color: $color-white-text;
 
 .list__list, 
 .list__list-two{
-    background-color:rgb(198, 155, 117);
+    background-color:whitesmoke;
+    color:$color-text;
     padding: 20px;
     border-radius: 10px;
 
@@ -474,10 +472,7 @@ color: $color-white-text;
 .list__list.second {
     display:none;
     
-    @include desktop {
-        display:inline-block;
-        margin-top: -16px;
-    }  
+     
 }
 
 .list__seasonal-header {
@@ -505,9 +500,17 @@ color: $color-white-text;
         }
 }
 
+//REFERENCE
+.reference {
+    background-color: $color-header_bg;
+}
 
+
+//GALERIE
     
-
+.gallery {
+    height:300px;
+}
 
 
 //KONTAKTY//
@@ -590,11 +593,11 @@ height: 500px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
-    background-color: $color-header-text-bg);
+    background-color: $color-header-text-bg;
     border-radius: 10px;
     padding: 10px;
     margin-top: 0;
-    color:whitesmoke;
+    color:$color-white-text;
     
     }
     
@@ -620,7 +623,9 @@ height: 500px;
 .footer {
     background-color:$color-header_bg;
     height: 60px;
-    padding-top: 20px;
-  
+    padding-top: 20px; 
 }
 
+.footer__copyright{
+    color:whitesmoke;
+}
