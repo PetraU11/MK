@@ -12,10 +12,11 @@ body {
 }
 
 main section {
-  padding: 20px;
+  padding: 30px 20px;
 }
 
-main section:nth-child(2n) {
+main section:nth-child(2n),
+main section:nth-child(2n) a {
   background-color: #230C0F;
   color: whitesmoke;
 }
@@ -98,7 +99,6 @@ h4 {
 .header__icons {
   padding-top: 20px;
   padding-bottom: 15px;
-  max-width: 300px;
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
@@ -107,6 +107,19 @@ h4 {
   .header__icons {
     grid-column: 1/-1;
     grid-row: 3/4;
+  }
+}
+@media screen and (min-width: 700px) {
+  .header__icons-contact {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .header .header__icons-contact-phone {
+    border-right: 2px solid whitesmoke;
+    padding-right: 16px;
   }
 }
 .header__hero {
@@ -140,6 +153,11 @@ h4 {
   min-width: 320px;
   border-radius: 10px;
   line-height: 28px;
+}
+@media screen and (min-width: 1000px) {
+  .header__hero-heading {
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -262,72 +280,8 @@ h4 {
   font-size: 1rem;
 }
 
-.header__icons-emailAddressHidden {
-  display: none;
-}
-
-.header__icons-emailAddressShown {
-  flex-basis: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-@media screen and (min-width: 1000px) {
-  .header__icons-emailAddressShown {
-    flex-basis: auto;
-    padding-bottom: 0;
-  }
-}
-
-.header__icons-emailIconHidden {
-  display: none;
-}
-
-.header__icons-phoneNumberHidden {
-  display: none;
-}
-
-.header__icons-phoneNumberShown {
-  display: inline-block;
-  flex-basis: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-}
-@media screen and (min-width: 1000px) {
-  .header__icons-phoneNumberShown {
-    flex-basis: auto;
-    padding-bottom: 0;
-  }
-}
-
-.header__icons-phoneIconHidden {
-  display: none;
-}
-
-.about {
-  background-color: rgba(198, 155, 117, 0.202);
-  border-radius: 10px;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (min-width: 1000px) {
-  .about {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-}
-.about__wrapper {
-  background-color: rgba(85, 134, 140, 0.2588235294);
-  padding: 10px;
-  border: 5px solid #230C0F;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
 .catering__wrapper {
-  max-width: 1200px;
+  max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
   overflow-x: hidden;
@@ -398,8 +352,15 @@ h4 {
   }
 }
 
+.list {
+  background-image: url("../images/stul.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .list__wrapper {
-  max-width: 1100px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -432,6 +393,8 @@ h4 {
   color: #230C0F;
   padding: 20px;
   border-radius: 10px;
+  max-width: 650px;
+  box-shadow: 10px 10px #230C0F;
 }
 @media screen and (min-width: 700px) {
   .list__list,
@@ -463,16 +426,13 @@ h4 {
   }
 }
 .order__wrapper {
-  max-width: 1100px;
-  background-color: rgba(207, 229, 232, 0.8862745098);
+  max-width: 1000px;
+  background-color: rgba(245, 245, 245, 0.9);
+  color: #230C0F;
   padding: 10px;
   margin: 25px auto;
-  border: 5px solid #230C0F;
   border-radius: 10px;
-}
-
-.reference {
-  background-color: #230C0F;
+  box-shadow: 10px 10px #230C0F;
 }
 
 .gallery {
@@ -508,20 +468,23 @@ h4 {
 @media screen and (min-width: 700px) {
   .contact__contacts {
     max-width: 400px;
-    justify-self: right;
+    justify-self: center;
     align-self: center;
     grid-row: 2/3;
     grid-column: 2/3;
   }
 }
+.contact__address {
+  margin-top: 32px;
+}
 @media screen and (min-width: 700px) {
   .contact__address {
+    margin-top: 0px;
     width: 300px;
     justify-self: center;
-    align-self: center;
+    align-self: baseline;
     grid-row: 2/3;
     grid-column: 3/4;
-    margin-top: -15px;
   }
 }
 .contact__map {
@@ -560,7 +523,7 @@ h4 {
   }
 }
 .naspici__wrapper {
-  max-width: 1100px;
+  max-width: 1000px;
   min-width: 300px;
   position: absolute;
   top: 50%;

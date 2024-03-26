@@ -30,10 +30,11 @@ body{
 }
 
 main section{
-   padding:20px;
+   padding: 30px 20px;
 }
 
-main section:nth-child(2n){
+main section:nth-child(2n),
+main section:nth-child(2n) a {
     background-color: $color-section_second;
     color:$color-white-text;
 }
@@ -119,7 +120,6 @@ h4 {
 &__icons{
     padding-top: 20px;
     padding-bottom: 15px;
-    max-width: 300px;
     font-weight: bold;
     margin-left:auto;
     margin-right:auto;
@@ -130,7 +130,21 @@ h4 {
      }
     }
 
+&__icons-contact {
+    @include tablet {
+        display:flex;
+        justify-content: center;
+        gap: 16px;
+    }
 
+}
+
+.header__icons-contact-phone {
+    @include tablet { 
+    border-right: 2px solid whitesmoke;
+    padding-right: 16px;
+    }
+}
 
 &__hero{
     background-image: url("../images/header_bc.png"); //object-fit pro fotky, nastavit height&weight. 
@@ -161,11 +175,15 @@ h4 {
     min-width: 320px;
     border-radius: 10px;
     line-height: 28px;
+    @include desktop{
+        font-size: 1.3rem;
+    }
      }
      
 
 }
 
+//JS HMB Menu
 
 .menu__bars{
     @include tablet {
@@ -282,81 +300,11 @@ h4 {
 }
 
 
-//JS
-
-.header__icons-emailAddressHidden{
-    display:none; 
-} // p schované - výchozí
-
-
-.header__icons-emailAddressShown{
-    flex-basis:100%;
-    padding-left: 10px;
-    padding-right:10px;
-    padding-bottom: 10px;
-    
-    @include desktop {
-        flex-basis:auto;
-        padding-bottom:0;
-    }
-} 
-
-.header__icons-emailIconHidden {
-    display:none
-}
-
-.header__icons-phoneNumberHidden {
-    display:none
-}
-
-.header__icons-phoneNumberShown {
-    display:inline-block;
-    flex-basis:100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-
-    @include desktop {
-        flex-basis:auto;
-        padding-bottom:0;
-    }
-}
-
-.header__icons-phoneIconHidden {
-    display:none
-} 
-
-
-
-
-
-//O NÁS//
-.about{
-    background-color:rgba(198, 155, 117, 0.202) ;
-    border-radius: 10px;
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right:auto;
-  
-    @include desktop {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    &__wrapper {
-        background-color: #55868c42;
-        padding: 10px;
-        border:5px solid $color-header_bg;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        }
-}
-    
 
 //MASOVÁ KORYTA//
 
 .catering__wrapper{
-    max-width: 1200px;
+    max-width: 1000px;
     margin-right:auto;
     margin-left:auto;
     overflow-x: hidden;
@@ -426,10 +374,23 @@ h4 {
 
 //CATERING
 
+
+.list{
+    background-image: url("../images/stul.jpg"); //object-fit pro fotky, nastavit height&weight. 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    
+}
+
+
 .list__wrapper {
-    max-width:1100px;
+    max-width:1000px;
     margin-left:auto;
     margin-right:auto;
+    
+    
 }
 
 .list__menu-product {
@@ -461,6 +422,8 @@ h4 {
     color:$color-text;
     padding: 20px;
     border-radius: 10px;
+    max-width: 650px;
+    box-shadow:10px 10px $color-header_bg;
 
     @include tablet{ 
     line-height: 2.5em;
@@ -491,19 +454,18 @@ h4 {
     }
 
     &__wrapper {
-        max-width: 1100px;
-        background-color: #cfe5e8e2;
+        max-width: 1000px;
+        background-color: rgba(245, 245, 245, 0.9);
+        color:$color-text;
         padding: 10px;
         margin: 25px auto;
-        border:5px solid $color-header_bg;
         border-radius: 10px;
+        box-shadow:10px 10px $color-header_bg;
         }
 }
 
 //REFERENCE
-.reference {
-    background-color: $color-header_bg;
-}
+
 
 
 //GALERIE
@@ -537,7 +499,7 @@ h4 {
 &__contacts {
     @include tablet{
     max-width: 400px;
-    justify-self: right;
+    justify-self: center;
     align-self: center;
     grid-row: 2 / 3;
     grid-column: 2 / 3;} 
@@ -545,13 +507,15 @@ h4 {
     } 
 
 &__address {
+    margin-top:32px;
     @include tablet{
+        margin-top:0px;
     width: 300px;
     justify-self: center;
-    align-self: center;
+    align-self:baseline;
     grid-row: 2 / 3;
     grid-column: 3 / 4;
-    margin-top: -15px;}
+  }
     
 }
 
@@ -587,7 +551,7 @@ height: 500px;
 }
 
 &__wrapper {
-    max-width: 1100px;
+    max-width: 1000px;
     min-width: 300px;
     position:absolute;
     top: 50%;
