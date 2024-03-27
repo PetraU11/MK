@@ -332,6 +332,8 @@ h4 {
 }
 
 .catering-pricing-list {
+  border-radius: 50%;
+  background-color: rgba(35, 12, 15, 0.8352941176);
   width: 170px;
   height: 170px;
   padding: 30px 0;
