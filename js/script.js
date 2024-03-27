@@ -63,7 +63,7 @@ hideButton.addEventListener("click", () => {
 
 // REREFENCE - ChatGPT
 
-
+/*
     // Načtení uložených komentářů při načtení stránky
     loadFromLocalStorage();
   
@@ -126,3 +126,5 @@ hideButton.addEventListener("click", () => {
   }
   
  // localStorage.clear()
+
+ */
