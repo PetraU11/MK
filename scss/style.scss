@@ -480,9 +480,10 @@ h4 {
 }
 
 .reference__comment {
-    padding: 20px;
+    
     @include desktop {
         flex-basis:50%;
+        padding: 20px;
     }
 }
 
