@@ -449,6 +449,9 @@ h4 {
   }
 }
 
+.reference__comment {
+  padding: 20px;
+}
 @media screen and (min-width: 1000px) {
   .reference__comment {
     flex-basis: 50%;
@@ -461,7 +464,7 @@ h4 {
   }
 }
 
-.comment__feedback {
+.reference__comment-line {
   font-style: italic;
 }
 

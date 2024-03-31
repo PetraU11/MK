@@ -480,6 +480,7 @@ h4 {
 }
 
 .reference__comment {
+    padding: 20px;
     @include desktop {
         flex-basis:50%;
     }
@@ -490,7 +491,7 @@ h4 {
     text-align: left;}
 }
 
-.comment__feedback {
+.reference__comment-line {
     font-style: italic;
 }
 
