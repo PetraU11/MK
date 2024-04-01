@@ -10,6 +10,7 @@
     @media screen and (min-width: 1000px) {@content; }}
 
 
+
 $color-text: #230C0F;
 $color-section_second:  #230C0F;
 $color-header_bg: #230C0F;
@@ -53,13 +54,17 @@ h4 {
 }
 
 .arrow-up {
-    margin-top: 15px;
+    margin-top: 32px;
     @include tablet {
         display:none;
     }
 }
 
-
+// Iphone phone number
+.phone_number{
+    color: inherit;
+    text-decoration: none;
+    }
 
 
 //HEADER//

@@ -35,12 +35,17 @@ h4 {
 }
 
 .arrow-up {
-  margin-top: 15px;
+  margin-top: 32px;
 }
 @media screen and (min-width: 700px) {
   .arrow-up {
     display: none;
   }
+}
+
+.phone_number {
+  color: inherit;
+  text-decoration: none;
 }
 
 .header {
