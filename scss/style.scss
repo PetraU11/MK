@@ -9,13 +9,18 @@
 @mixin desktop {
     @media screen and (min-width: 1000px) {@content; }}
 
+@mixin light-bc {
+    background-color: $color-light;
+}
+
+@mixin dark-bc {
+    background-color:$color-dark;
+    color:$color-light;
+}
 
 
-$color-text: #230C0F;
-$color-section_second:  #230C0F;
-$color-header_bg: #230C0F;
-$color-header-text-bg: #230c0fd5;
-$color-white-text:whitesmoke;
+$color-dark: #230C0F;
+$color-light: #f5f5f5;
 
 
 // OBECNÉ //
@@ -25,7 +30,7 @@ body{
     margin: 0;
     padding:0;
     text-align:center; 
-    color:$color-text;
+    color:$color-dark;
     font-size: 1.1rem;
     font-family: 'Lora', serif;
 }
@@ -34,13 +39,14 @@ main section{
    padding: 30px 20px;
 }
 
-
+/*
 main section:nth-child(2n),
 main section:nth-child(2n) a {
     background-color: $color-section_second;
     color:$color-white-text;
 
 }
+*/
 
 ul{
     list-style-type: none;
@@ -48,7 +54,7 @@ ul{
 
 a {
     text-decoration: none;
-    color: black
+    
 }
 
 h4 {
@@ -72,8 +78,8 @@ h4 {
 //HEADER//
 
 .header{
-    background-color: $color-header_bg;
-    color: $color-white-text;
+    background-color: $color-dark;
+    color: $color-light;
 
     @include desktop {
         display:grid;
@@ -148,7 +154,7 @@ h4 {
 
 .header__icons-contact-phone {
     @include tablet { 
-    border-right: 2px solid whitesmoke;
+    border-right: 2px solid $color-light;
     padding-right: 16px;
     }
 }
@@ -177,7 +183,7 @@ h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
-    background-color: $color-header-text-bg;
+    background-color: $color-dark;
     padding: 10px;
     min-width: 320px;
     border-radius: 10px;
@@ -204,7 +210,7 @@ h4 {
    margin-right:auto;
     width: 35px;
     height: 5px; 
-    background-color: whitesmoke;
+    background-color: $color-light;
     border-radius: 10%;
     
 
@@ -252,7 +258,7 @@ h4 {
     right: 0%;
     top:155px;
     z-index: 100;
-    background-color: $color-header_bg;
+    background-color: $color-dark;
     width: 100%;
     padding-left:0;
 }
@@ -260,10 +266,10 @@ h4 {
 .menu__item{
     padding-top: 30px;
     padding-bottom:30px;
-    border-bottom: 3px solid whitesmoke;
+    border-bottom: 3px solid $color-light;
     @include tablet {
         border-bottom: none;
-        border-right: 3px solid whitesmoke;
+        border-right: 3px solid $color-light;
         padding-top: 0px;
         padding-bottom:0px;
         padding-right: 10px;
@@ -289,7 +295,7 @@ h4 {
 
 
 .menu__link {
-    color:whitesmoke;
+    color:$color-light;
     @include tablet {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -334,7 +340,7 @@ h4 {
 
 
 .catering__pricing img {
-    border: 5px solid $color-header_bg; 
+    border: 5px solid $color-dark; 
     border-radius: 10px;
     width: 300px;
     min-height:180px;
@@ -361,13 +367,13 @@ h4 {
 
 .catering-pricing-list {
     border-radius: 50%;
-    background-color:$color-header-text-bg ;
+    background-color:$color-dark;
     width: 170px;
     height: 170px;
     padding: 30px 0;
     margin-left:auto;
     margin-right:auto;
-    color:$color-white-text;
+    color:$color-light;
     transform:translateY(-198px);
 
 }
@@ -387,6 +393,7 @@ h4 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color:$color-light;
    
     
 }
@@ -396,6 +403,7 @@ h4 {
     max-width:1000px;
     margin-left:auto;
     margin-right:auto;
+    
     
     
 }
@@ -425,12 +433,12 @@ h4 {
 
 .list__list, 
 .list__list-two{
-    background-color:whitesmoke;
-    color:$color-text;
+    background-color:$color-light;
+    color:$color-dark;
     padding: 20px;
     border-radius: 10px;
     max-width: 650px;
-    box-shadow:10px 10px $color-header_bg;
+    box-shadow:10px 10px $color-dark;
 
     @include tablet{ 
     line-height: 2.5em;
@@ -459,11 +467,11 @@ h4 {
     &__wrapper {
         max-width: 1000px;
         background-color: rgba(245, 245, 245, 0.9);
-        color:$color-text;
+        color:$color-dark;
         padding: 10px;
         margin: 25px auto;
         border-radius: 10px;
-        box-shadow:10px 10px $color-header_bg;
+        box-shadow:10px 10px $color-dark;
         }
 }
 
@@ -510,7 +518,7 @@ h4 {
 .form textarea {
     width: 100%;
     min-height: 50px;
-    border: 2px solid $color-text;
+    border: 2px solid $color-dark;
     border-radius: 10px;
     font-size: 16px;
     padding: 5px 10px;
@@ -547,7 +555,7 @@ h4 {
 
 .booking-button{
     padding:10px;
-    border: 2px solid $color-header_bg;
+    border: 2px solid $color-dark;
     border-radius: 10px;
 }
 
@@ -610,6 +618,7 @@ h4 {
 //KONTAKTY//
 .contact {
     min-height: 300px;
+    @include dark-bc();
     @include tablet{
     display:grid;
     grid-template-columns: 5% 1fr 1fr 5%;
@@ -675,7 +684,7 @@ background-image: url("../images/naspici_small.jpg");
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-color:$color-white-text;
+color:$color-light;
 position:relative;
 height: 600px;
 @include desktop {background-image: url("../images/naspici.jpg");
@@ -689,16 +698,16 @@ height: 600px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
-    background-color: $color-header-text-bg;
+    background-color: $color-dark;
     border-radius: 10px;
     padding: 10px;
     margin-top: 0;
-    color:$color-white-text;
+    color:$color-light;
     
     }
     
     &__wrapper-link--color{
-    color:$color-white-text;
+    color:$color-light;
     text-decoration: underline;
     }
 
@@ -716,11 +725,11 @@ height: 600px;
 //FOOTER//
 
 .footer {
-    background-color:$color-header_bg;
+    background-color:$color-dark;
     height: 60px;
     padding-top: 20px; 
 }
 
 .footer__copyright{
-    color:whitesmoke;
+    color:$color-light;
 }

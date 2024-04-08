@@ -15,19 +15,20 @@ main section {
   padding: 30px 20px;
 }
 
+/*
 main section:nth-child(2n),
 main section:nth-child(2n) a {
-  background-color: #230C0F;
-  color: whitesmoke;
-}
+    background-color: $color-section_second;
+    color:$color-white-text;
 
+}
+*/
 ul {
   list-style-type: none;
 }
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 h4 {
@@ -50,7 +51,7 @@ h4 {
 
 .header {
   background-color: #230C0F;
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 @media screen and (min-width: 1000px) {
   .header {
@@ -123,7 +124,7 @@ h4 {
 }
 @media screen and (min-width: 700px) {
   .header .header__icons-contact-phone {
-    border-right: 2px solid whitesmoke;
+    border-right: 2px solid #f5f5f5;
     padding-right: 16px;
   }
 }
@@ -153,7 +154,7 @@ h4 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(35, 12, 15, 0.8352941176);
+  background-color: #230C0F;
   padding: 10px;
   min-width: 320px;
   border-radius: 10px;
@@ -177,7 +178,7 @@ h4 {
   margin-right: auto;
   width: 35px;
   height: 5px;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   border-radius: 10%;
 }
 @media screen and (min-width: 700px) {
@@ -235,12 +236,12 @@ h4 {
 .menu__item {
   padding-top: 30px;
   padding-bottom: 30px;
-  border-bottom: 3px solid whitesmoke;
+  border-bottom: 3px solid #f5f5f5;
 }
 @media screen and (min-width: 700px) {
   .menu__item {
     border-bottom: none;
-    border-right: 3px solid whitesmoke;
+    border-right: 3px solid #f5f5f5;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-right: 10px;
@@ -266,7 +267,7 @@ h4 {
 }
 
 .menu__link {
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 @media screen and (min-width: 700px) {
   .menu__link {
@@ -338,13 +339,13 @@ h4 {
 
 .catering-pricing-list {
   border-radius: 50%;
-  background-color: rgba(35, 12, 15, 0.8352941176);
+  background-color: #230C0F;
   width: 170px;
   height: 170px;
   padding: 30px 0;
   margin-left: auto;
   margin-right: auto;
-  color: whitesmoke;
+  color: #f5f5f5;
   transform: translateY(-198px);
 }
 
@@ -362,6 +363,7 @@ h4 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: #f5f5f5;
 }
 
 .list__wrapper {
@@ -394,7 +396,7 @@ h4 {
 
 .list__list,
 .list__list-two {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   color: #230C0F;
   padding: 20px;
   border-radius: 10px;
@@ -578,6 +580,8 @@ h4 {
 
 .contact {
   min-height: 300px;
+  background-color: #230C0F;
+  color: #f5f5f5;
 }
 @media screen and (min-width: 700px) {
   .contact {
@@ -649,7 +653,7 @@ h4 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: whitesmoke;
+  color: #f5f5f5;
   position: relative;
   height: 600px;
 }
@@ -666,14 +670,14 @@ h4 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(35, 12, 15, 0.8352941176);
+  background-color: #230C0F;
   border-radius: 10px;
   padding: 10px;
   margin-top: 0;
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 .naspici__wrapper-link--color {
-  color: whitesmoke;
+  color: #f5f5f5;
   text-decoration: underline;
 }
 
@@ -690,5 +694,5 @@ h4 {
 }
 
 .footer__copyright {
-  color: whitesmoke;
+  color: #f5f5f5;
 }/*# sourceMappingURL=style.css.map */
