@@ -407,6 +407,7 @@ h4 {
     
     
     
+    
 }
 
 .list__menu-product {
@@ -441,6 +442,7 @@ h4 {
     max-width: 650px;
     box-shadow:10px 10px $color-dark;
     margin-bottom:32px;
+    margin-top:32px;
 
     @include tablet{ 
     line-height: 2.5em;

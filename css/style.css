@@ -404,6 +404,7 @@ h4 {
   max-width: 650px;
   box-shadow: 10px 10px #230C0F;
   margin-bottom: 32px;
+  margin-top: 32px;
 }
 @media screen and (min-width: 700px) {
   .list__list.first,
