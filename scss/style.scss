@@ -34,10 +34,12 @@ main section{
    padding: 30px 20px;
 }
 
+
 main section:nth-child(2n),
 main section:nth-child(2n) a {
     background-color: $color-section_second;
     color:$color-white-text;
+
 }
 
 ul{
@@ -541,6 +543,12 @@ h4 {
 
 .form_submit-done {
     display:none;
+}
+
+.booking-button{
+    padding:10px;
+    border: 2px solid $color-header_bg;
+    border-radius: 10px;
 }
 
     

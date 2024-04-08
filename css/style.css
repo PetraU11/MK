@@ -515,6 +515,12 @@ h4 {
   display: none;
 }
 
+.booking-button {
+  padding: 10px;
+  border: 2px solid #230C0F;
+  border-radius: 10px;
+}
+
 .gallery__photos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
