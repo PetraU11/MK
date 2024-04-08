@@ -379,7 +379,7 @@ h4 {
 }
 
 .catering__composition {
-    margin-top: 30px;
+    margin-top: 32px;
     @include inbetween {
         margin-top: 0;
     }
@@ -431,7 +431,7 @@ h4 {
     display:none;
 }
 
-.list__list, 
+.list__list.first, 
 .list__list-two{
     background-color:$color-light;
     color:$color-dark;
@@ -439,6 +439,7 @@ h4 {
     border-radius: 10px;
     max-width: 650px;
     box-shadow:10px 10px $color-dark;
+    margin-bottom:32px;
 
     @include tablet{ 
     line-height: 2.5em;
@@ -452,6 +453,26 @@ h4 {
     
      
 }
+
+
+
+//iphone & ipad
+.form.time > input {
+    min-height: 36px;
+     min-width:130px;
+ }
+ 
+ .form.date > input {
+     height: 36px;
+     min-width:130px;
+ }
+ 
+ .form.date,
+ .form.time {
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ }
 
 
 
