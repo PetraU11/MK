@@ -455,26 +455,26 @@ h4 {
 }
 
 
-
+.form.timeDate > input {
+    height: 36px;
+    min-width:130px;
+}
+/*
 //iphone & ipad
-.form.time > input {
-    min-height: 36px;
-     min-width:130px;
- }
+
  
- .form.date > input {
+ .form.timeDate > input {
      height: 36px;
      min-width:130px;
  }
  
- .form.date,
- .form.time {
+ .form.date {
  display: flex;
  align-items: center;
  flex-direction: column;
  }
 
-
+*/
 
 //OBJEDNÁVKY//
 

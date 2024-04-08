@@ -418,23 +418,27 @@ h4 {
   display: none;
 }
 
-.form.time > input {
-  min-height: 36px;
-  min-width: 130px;
-}
-
-.form.date > input {
+.form.timeDate > input {
   height: 36px;
   min-width: 130px;
 }
 
-.form.date,
-.form.time {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
+/*
+//iphone & ipad
 
+
+ .form.timeDate > input {
+     height: 36px;
+     min-width:130px;
+ }
+
+ .form.date {
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ }
+
+*/
 .order {
   background-image: url("../images/stul.jpg");
   background-size: cover;
