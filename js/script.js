@@ -59,4 +59,16 @@ hideButton.addEventListener("click", () => {
 
 
 
+//REFERENCE BUTTON
 
+const submitButton = document.getElementById("booking-button")
+const submitDone = document.getElementById("form_submit-done")
+const form = document.getElementById("reference__form")
+
+form.addEventListener("submit", () => {
+  submitButton.style.display = "none";
+  submitDone.style.display = "block";
+  submitDone.style.color = "green";
+  submitDone.style.fontWeight = "bold";
+
+})

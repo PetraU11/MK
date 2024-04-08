@@ -569,10 +569,24 @@ h4 {
 }
 
 .booking-button{
-    padding:10px;
+    padding:10px 20px;
     border: 2px solid $color-dark;
     border-radius: 10px;
+    background-color: $color-dark;
+    color:$color-light;
+    font-size: inherit;
 }
+
+.booking-button:hover{
+   background-color: #5d4447;
+}
+
+.booking-button:active{
+    background-color: $color-light;
+    color:$color-dark;
+}
+
+
 
     
 //GALERIE

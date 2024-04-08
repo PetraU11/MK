@@ -530,9 +530,21 @@ h4 {
 }
 
 .booking-button {
-  padding: 10px;
+  padding: 10px 20px;
   border: 2px solid #230C0F;
   border-radius: 10px;
+  background-color: #230C0F;
+  color: #f5f5f5;
+  font-size: inherit;
+}
+
+.booking-button:hover {
+  background-color: #5d4447;
+}
+
+.booking-button:active {
+  background-color: #f5f5f5;
+  color: #230C0F;
 }
 
 .gallery__photos {
