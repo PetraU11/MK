@@ -457,8 +457,11 @@ h4 {
 //iphone, ipad
 
 .form.timeDate > input {
-    min-height: 50px;
+    height: 50px;
     min-width:280px;
+    @include tablet {
+        height: 80px;
+    }
 }
 
 .form.timeDate {

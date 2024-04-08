@@ -419,8 +419,13 @@ h4 {
 }
 
 .form.timeDate > input {
-  min-height: 50px;
+  height: 50px;
   min-width: 280px;
+}
+@media screen and (min-width: 700px) {
+  .form.timeDate > input {
+    height: 80px;
+  }
 }
 
 .form.timeDate {
