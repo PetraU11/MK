@@ -459,6 +459,9 @@ h4 {
   }
 }
 
+.reference__comment {
+  margin-bottom: 32px;
+}
 @media screen and (min-width: 1000px) {
   .reference__comment {
     flex-basis: 50%;
