@@ -459,9 +459,6 @@ h4 {
 .form.timeDate > input {
     height: 50px;
     min-width:280px;
-    @include tablet {
-        height: 80px;
-    }
 }
 
 .form.timeDate {
