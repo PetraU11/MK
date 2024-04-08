@@ -419,7 +419,7 @@ h4 {
 }
 
 .form.timeDate > input {
-  height: 50px;
+  min-height: 50px;
   min-width: 280px;
 }
 
@@ -429,22 +429,6 @@ h4 {
   flex-direction: column;
 }
 
-/*
-//iphone & ipad
-
-
- .form.timeDate > input {
-     height: 36px;
-     min-width:130px;
- }
-
- .form.timeDate {
- display: flex;
- align-items: center;
- flex-direction: column;
- }
-
-*/
 .order {
   background-image: url("../images/stul.jpg");
   background-size: cover;
