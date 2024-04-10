@@ -446,7 +446,7 @@ h4 {
 }
 @media screen and (min-width: 700px) {
   .form.timeDate > input {
-    height: 100px;
+    height: 500px;
   }
 }
 
