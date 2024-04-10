@@ -261,6 +261,8 @@ h4 {
     padding-left:0;
     animation-name:menuOpen;
     animation-duration:0.5s;
+    height:400px;
+    overflow-y: auto;
 }
 
 @keyframes menuOpen {

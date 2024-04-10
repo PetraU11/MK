@@ -233,6 +233,8 @@ h4 {
           animation-name: menuOpen;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
+  height: 400px;
+  overflow-y: auto;
 }
 
 @-webkit-keyframes menuOpen {
