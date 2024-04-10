@@ -469,7 +469,7 @@ h4 {
     height: 50px;
     min-width:280px;
     @include tablet {
-        min-width:100px;
+        height:100px;
     }
 }
 
