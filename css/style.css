@@ -444,6 +444,11 @@ h4 {
   height: 50px;
   min-width: 280px;
 }
+@media screen and (min-width: 700px) {
+  .form.timeDate > input {
+    min-width: 100px;
+  }
+}
 
 .form.timeDate {
   display: flex;

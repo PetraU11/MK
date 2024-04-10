@@ -468,6 +468,9 @@ h4 {
 .form.timeDate > input {
     height: 50px;
     min-width:280px;
+    @include tablet {
+        min-width:100px;
+    }
 }
 
 .form.timeDate {
