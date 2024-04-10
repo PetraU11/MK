@@ -13,7 +13,7 @@ hamburger.addEventListener("click", () => {
     bar3.classList.remove("three")
 
 } else {
-    hamburger.style.marginTop = "16px"
+    hamburger.style.marginTop = "36px"
     hamburgerMenu.classList.add("open")
     bar1.classList.add("one")
     bar2.classList.add("two")
