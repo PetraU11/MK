@@ -261,8 +261,7 @@ h4 {
     padding-left:0;
     animation-name:menuOpen;
     animation-duration:0.5s;
-    height:410px;
-    overflow-y: auto;
+   
 }
 
 @keyframes menuOpen {
@@ -468,9 +467,7 @@ h4 {
 .form.timeDate > input {
     height: 50px;
     min-width:280px;
-    @include tablet {
-        height:500px;
-    }
+    
 }
 
 .form.timeDate {
