@@ -72,3 +72,22 @@ form.addEventListener("submit", () => {
   submitDone.style.fontWeight = "bold";
 
 })
+
+
+//REFERENCE COMMENTS
+
+const showContent = document.getElementById("referenceShown")
+const refButton = document.getElementById("referenceButton")
+const refButtonHide = document.getElementById("referenceButtonHidden")
+
+refButton.addEventListener("click", () => {
+showContent.style.display = "inline-block"
+refButton.style.display = "none"
+refButtonHide.style.display = "inline-block"
+})
+
+refButtonHide.addEventListener("click", () => {
+    showContent.style.display = "none"
+    refButton.style.display = "inline-block"
+    refButtonHide.style.display = "none"
+    })

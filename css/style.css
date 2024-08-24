@@ -499,6 +499,23 @@ h4 {
   font-style: italic;
 }
 
+.reference__more {
+  font-weight: bolder;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.reference__more-hidden {
+  font-weight: bolder;
+  display: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.reference__parttwo {
+  display: none;
+}
+
 .form {
   margin-bottom: 16px;
 }
